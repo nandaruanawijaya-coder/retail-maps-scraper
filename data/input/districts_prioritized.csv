@@ -1,0 +1,1011 @@
+district_id,kecamatan_name,kabupaten_name,provinsi_name,numVisit
+7371013,Rappocini,Kota Makassar,Sulawesi Selatan,6558
+1207026,Percut Sei Tuan,Deli Serdang,Sumatera Utara,4425
+3174007,Kebayoran Baru,Kota Administrasi Jakarta Selatan,DKI Jakarta,4322
+7371010,Tamalate,Kota Makassar,Sulawesi Selatan,4111
+3175010,Cipayung,Kota Administrasi Jakarta Timur,DKI Jakarta,3999
+3175009,Ciracas,Kota Administrasi Jakarta Timur,DKI Jakarta,3876
+3174002,Setiabudi,Kota Administrasi Jakarta Selatan,DKI Jakarta,3754
+3174003,Mampang Prapatan,Kota Administrasi Jakarta Selatan,DKI Jakarta,3744
+7371009,Panakkukang,Kota Makassar,Sulawesi Selatan,3592
+7306008,Somba Opu,Gowa,Sulawesi Selatan,3462
+3174009,Jagakarsa,Kota Administrasi Jakarta Selatan,DKI Jakarta,3367
+7371011,Biringkanaya,Kota Makassar,Sulawesi Selatan,3343
+7371012,Manggala,Kota Makassar,Sulawesi Selatan,3214
+7371014,Tamalanrea,Kota Makassar,Sulawesi Selatan,3194
+3174004,Pasar Minggu,Kota Administrasi Jakarta Selatan,DKI Jakarta,3179
+1207023,Sunggal,Deli Serdang,Sumatera Utara,3116
+3174008,Pancoran,Kota Administrasi Jakarta Selatan,DKI Jakarta,2952
+3175007,Duren Sawit,Kota Administrasi Jakarta Timur,DKI Jakarta,2913
+5171001,Denpasar Selatan,Kota Denpasar,Bali,2762
+3276002,Cimanggis,Kota Depok,Jawa Barat,2729
+1271011,Medan Johor,Kota Medan,Sumatera Utara,2626
+1271009,Medan Amplas,Kota Medan,Sumatera Utara,2624
+3174001,Tebet,Kota Administrasi Jakarta Selatan,DKI Jakarta,2404
+3175005,Pasar Rebo,Kota Administrasi Jakarta Timur,DKI Jakarta,2390
+1271003,Medan Helvetia,Kota Medan,Sumatera Utara,2330
+3276006,Beji,Kota Depok,Jawa Barat,2285
+1271021,Medan Selayang,Kota Medan,Sumatera Utara,2223
+3175004,Kramatjati,Kota Administrasi Jakarta Timur,DKI Jakarta,2074
+1271002,Medan Sunggal,Kota Medan,Sumatera Utara,2067
+3275002,Bekasi Barat,Kota Bekasi,Jawa Barat,2066
+3275004,Bekasi Selatan,Kota Bekasi,Jawa Barat,1987
+3671001,Tangerang,Kota Tangerang,Banten,1986
+3174006,Cilandak,Kota Administrasi Jakarta Selatan,DKI Jakarta,1969
+1271004,Medan Denai,Kota Medan,Sumatera Utara,1929
+3175002,Pulogadung,Kota Administrasi Jakarta Timur,DKI Jakarta,1864
+1271014,Medan Tembung,Kota Medan,Sumatera Utara,1843
+1271020,Medan Timur,Kota Medan,Sumatera Utara,1783
+3276005,Sukmajaya,Kota Depok,Jawa Barat,1779
+3173008,Kembangan,Kota Administrasi Jakarta Barat,DKI Jakarta,1709
+3173001,Cengkareng,Kota Administrasi Jakarta Barat,DKI Jakarta,1685
+3674001,Serpong,Kota Tangerang Selatan,Banten,1666
+3174005,Kebayoran Lama,Kota Administrasi Jakarta Selatan,DKI Jakarta,1656
+7371002,Mamajang,Kota Makassar,Sulawesi Selatan,1600
+3216002,Babelan,Bekasi,Jawa Barat,1583
+3171007,Tanah Abang,Kota Administrasi Jakarta Pusat,DKI Jakarta,1573
+3674006,Pamulang,Kota Tangerang Selatan,Banten,1571
+3172003,Koja,Kota Administrasi Jakarta Utara,DKI Jakarta,1488
+3275003,Bekasi Utara,Kota Bekasi,Jawa Barat,1463
+,,,,1451
+3674003,Pondok Aren,Kota Tangerang Selatan,Banten,1367
+3174010,Pesanggrahan,Kota Administrasi Jakarta Selatan,DKI Jakarta,1361
+3175003,Jatinegara,Kota Administrasi Jakarta Timur,DKI Jakarta,1358
+3216006,Tambun Selatan,Bekasi,Jawa Barat,1342
+3175006,Cakung,Kota Administrasi Jakarta Timur,DKI Jakarta,1341
+1271001,Medan Kota,Kota Medan,Sumatera Utara,1339
+1271010,Medan Area,Kota Medan,Sumatera Utara,1318
+1271018,Medan Perjuangan,Kota Medan,Sumatera Utara,1302
+1271012,Medan Marelan,Kota Medan,Sumatera Utara,1281
+7306007,Palangga,Gowa,Sulawesi Selatan,1271
+3674004,Ciputat,Kota Tangerang Selatan,Banten,1249
+3671005,Cipondoh,Kota Tangerang,Banten,1248
+7371001,Mariso,Kota Makassar,Sulawesi Selatan,1233
+3175001,Matraman,Kota Administrasi Jakarta Timur,DKI Jakarta,1222
+7371006,Bontoala,Kota Makassar,Sulawesi Selatan,1198
+1209019,Kota Kisaran Barat,Asahan,Sumatera Utara,1193
+7371003,Makassar,Kota Makassar,Sulawesi Selatan,1184
+3201001,Cibinong,Bogor,Jawa Barat,1181
+1209020,Kota Kisaran Timur,Asahan,Sumatera Utara,1181
+3671006,Ciledug,Kota Tangerang,Banten,1165
+1271005,Medan Barat,Kota Medan,Sumatera Utara,1147
+1272002,Siantar Barat,Kota Pematangsiantar,Sumatera Utara,1131
+3674005,Ciputat Timur,Kota Tangerang Selatan,Banten,1111
+3175008,Makasar,Kota Administrasi Jakarta Timur,DKI Jakarta,1101
+3275008,Pondokgede,Kota Bekasi,Jawa Barat,1092
+7271008,Mantikulore,Kota Palu,Sulawesi Tengah,1086
+3603028,Kelapa Dua,Tangerang,Banten,1086
+3271004,Bogor Barat,Kota Bogor,Jawa Barat,1075
+1271019,Medan Petisah,Kota Medan,Sumatera Utara,1067
+1272006,Siantar Martoba,Kota Pematangsiantar,Sumatera Utara,1055
+3275010,Jatisampurna,Kota Bekasi,Jawa Barat,1053
+3204032,Baleendah,Bandung,Jawa Barat,1050
+1271006,Medan Deli,Kota Medan,Sumatera Utara,1043
+3217008,Padalarang,Bandung Barat,Jawa Barat,1035
+3173004,Tambora,Kota Administrasi Jakarta Barat,DKI Jakarta,1011
+3171006,Menteng,Kota Administrasi Jakarta Pusat,DKI Jakarta,1006
+3271006,Tanah Sareal,Kota Bogor,Jawa Barat,999
+1207021,Patumbak,Deli Serdang,Sumatera Utara,943
+1271017,Medan Baru,Kota Medan,Sumatera Utara,929
+3276001,Pancoran Mas,Kota Depok,Jawa Barat,904
+7371007,Tallo,Kota Makassar,Sulawesi Selatan,904
+3173002,Grogol Petamburan,Kota Administrasi Jakarta Barat,DKI Jakarta,900
+5171003,Denpasar Barat,Kota Denpasar,Bali,877
+3173005,Kebon Jeruk,Kota Administrasi Jakarta Barat,DKI Jakarta,853
+3674007,Setu,Kota Tangerang Selatan,Banten,844
+3201030,Dramaga,Bogor,Jawa Barat,836
+1207002,Tanjung Morawa,Deli Serdang,Sumatera Utara,828
+3671007,Karawaci,Kota Tangerang,Banten,827
+3671011,Pinang,Kota Tangerang,Banten,812
+3273001,Sukasari,Kota Bandung,Jawa Barat,810
+3216007,Cibitung,Bekasi,Jawa Barat,809
+3173006,Kalideres,Kota Administrasi Jakarta Barat,DKI Jakarta,807
+3674002,Serpong Utara,Kota Tangerang Selatan,Banten,794
+3201011,Gunung Sindur,Bogor,Jawa Barat,791
+3275001,Bekasi Timur,Kota Bekasi,Jawa Barat,757
+3171001,Gambir,Kota Administrasi Jakarta Pusat,DKI Jakarta,752
+3171003,Kemayoran,Kota Administrasi Jakarta Pusat,DKI Jakarta,746
+3172006,Kelapa Gading,Kota Administrasi Jakarta Utara,DKI Jakarta,738
+7371004,Ujung Pandang,Kota Makassar,Sulawesi Selatan,725
+3276010,Tapos,Kota Depok,Jawa Barat,720
+1272003,Siantar Utara,Kota Pematangsiantar,Sumatera Utara,720
+3277002,Cimahi Tengah,Kota Cimahi,Jawa Barat,717
+3204009,Margahayu,Bandung,Jawa Barat,712
+3276009,Cinere,Kota Depok,Jawa Barat,701
+1271007,Medan Tuntungan,Kota Medan,Sumatera Utara,691
+3276004,Limo,Kota Depok,Jawa Barat,686
+3271005,Bogor Utara,Kota Bogor,Jawa Barat,680
+3204012,Dayeuhkolot,Bandung,Jawa Barat,668
+3275012,Pondokmelati,Kota Bekasi,Jawa Barat,665
+3201002,Gunung Putri,Bogor,Jawa Barat,663
+3172001,Penjaringan,Kota Administrasi Jakarta Utara,DKI Jakarta,663
+3276008,Cilodong,Kota Depok,Jawa Barat,658
+3172002,Tanjung Priok,Kota Administrasi Jakarta Utara,DKI Jakarta,642
+3275009,Jatiasih,Kota Bekasi,Jawa Barat,640
+3201020,Parung Panjang,Bogor,Jawa Barat,622
+1272007,Siantar Sitalasari,Kota Pematangsiantar,Sumatera Utara,622
+7271003,Palu Selatan,Kota Palu,Sulawesi Tengah,619
+3275006,Medansatria,Kota Bekasi,Jawa Barat,615
+3216012,Kedung Waringin,Bekasi,Jawa Barat,589
+1207024,Hamparan Perak,Deli Serdang,Sumatera Utara,581
+3273013,Lengkong,Kota Bandung,Jawa Barat,574
+3671012,Karang Tengah,Kota Tangerang,Banten,569
+3201004,Sukaraja,Bogor,Jawa Barat,565
+1207005,Pancur Batu,Deli Serdang,Sumatera Utara,564
+3204011,Katapang,Bandung,Jawa Barat,546
+1271016,Medan Polonia,Kota Medan,Sumatera Utara,542
+3277003,Cimahi Utara,Kota Cimahi,Jawa Barat,531
+1207022,Deli Tua,Deli Serdang,Sumatera Utara,520
+3277001,Cimahi Selatan,Kota Cimahi,Jawa Barat,518
+3273016,Kiaracondong,Kota Bandung,Jawa Barat,500
+3273002,Coblong,Kota Bandung,Jawa Barat,494
+3172004,Cilincing,Kota Administrasi Jakarta Utara,DKI Jakarta,485
+1207025,Labuhan Deli,Deli Serdang,Sumatera Utara,480
+3273011,Regol,Kota Bandung,Jawa Barat,473
+3216005,Tambun Utara,Bekasi,Jawa Barat,455
+3273009,Bandung Wetan,Kota Bandung,Jawa Barat,446
+3201013,Bojong Gede,Bogor,Jawa Barat,445
+3271003,Bogor Tengah,Kota Bogor,Jawa Barat,442
+7271001,Palu Timur,Kota Palu,Sulawesi Tengah,438
+3217006,Ngamprah,Bandung Barat,Jawa Barat,433
+3276007,Cipayung,Kota Depok,Jawa Barat,431
+1272001,Siantar Timur,Kota Pematangsiantar,Sumatera Utara,416
+7371005,Wajo,Kota Makassar,Sulawesi Selatan,409
+3216008,Cikarang Barat,Bekasi,Jawa Barat,409
+7309014,Turikale,Maros,Sulawesi Selatan,409
+3204010,Margaasih,Bandung,Jawa Barat,405
+3275005,Rawalumbu,Kota Bekasi,Jawa Barat,405
+7210014,Marawola,Sigi,Sulawesi Tengah,403
+3201037,Tajurhalang,Bogor,Jawa Barat,397
+3201012,Kemang,Bogor,Jawa Barat,395
+3216009,Cikarang Utara,Bekasi,Jawa Barat,386
+3173007,Pal Merah,Kota Administrasi Jakarta Barat,DKI Jakarta,382
+3217009,Batujajar,Bandung Barat,Jawa Barat,369
+3276011,Bojongsari,Kota Depok,Jawa Barat,369
+3273022,Buahbatu,Kota Bandung,Jawa Barat,368
+1271015,Medan Maimun,Kota Medan,Sumatera Utara,361
+3273021,Bandung Kidul,Kota Bandung,Jawa Barat,356
+3173003,Taman Sari,Kota Administrasi Jakarta Barat,DKI Jakarta,355
+7306012,Barombong,Gowa,Sulawesi Selatan,353
+1210001,Rantau Utara,Labuhanbatu,Sumatera Utara,352
+1207028,Lubuk Pakam,Deli Serdang,Sumatera Utara,348
+1207027,Batang Kuis,Deli Serdang,Sumatera Utara,345
+3171004,Senen,Kota Administrasi Jakarta Pusat,DKI Jakarta,341
+1275004,Binjai Timur,Kota Binjai,Sumatera Utara,338
+3273015,Bandung Kulon,Kota Bandung,Jawa Barat,336
+3171002,Sawah Besar,Kota Administrasi Jakarta Pusat,DKI Jakarta,333
+1271013,Medan Labuhan,Kota Medan,Sumatera Utara,328
+3204008,Bojongsoang,Bandung,Jawa Barat,327
+3275011,Mustikajaya,Kota Bekasi,Jawa Barat,324
+3204037,Soreang,Bandung,Jawa Barat,323
+3603022,Pagedangan,Tangerang,Banten,321
+3273023,Rancasari,Kota Bandung,Jawa Barat,320
+7306006,Bontomarannu,Gowa,Sulawesi Selatan,320
+3204014,Pameungpeuk,Bandung,Jawa Barat,318
+3172005,Pademangan,Kota Administrasi Jakarta Utara,DKI Jakarta,318
+3215001,Karawang Barat,Karawang,Jawa Barat,317
+3671003,Batuceper,Kota Tangerang,Banten,317
+3216001,Tarumajaya,Bekasi,Jawa Barat,311
+3603012,Pasar Kemis,Tangerang,Banten,307
+3273007,Sukajadi,Kota Bandung,Jawa Barat,305
+1209009,Air Joman,Asahan,Sumatera Utara,303
+1210002,Rantau Selatan,Labuhanbatu,Sumatera Utara,299
+7309013,Moncong Loe,Maros,Sulawesi Selatan,299
+3201010,Parung,Bogor,Jawa Barat,296
+3276003,Sawangan,Kota Depok,Jawa Barat,295
+3204035,Paseh,Bandung,Jawa Barat,292
+1275001,Binjai Utara,Kota Binjai,Sumatera Utara,287
+3273017,Bojongloa Kidul,Kota Bandung,Jawa Barat,287
+7305006,Galesong Utara,Takalar,Sulawesi Selatan,282
+1219007,Sei Balai,Batu Bara,Sumatera Utara,280
+3671009,Cibodas,Kota Tangerang,Banten,278
+3217010,Cihampelas,Bandung Barat,Jawa Barat,278
+1209016,Buntu Pane,Asahan,Sumatera Utara,272
+3211018,Sumedang Utara,Sumedang,Jawa Barat,270
+1207006,Namorambe,Deli Serdang,Sumatera Utara,270
+3271001,Bogor Selatan,Kota Bogor,Jawa Barat,265
+7309001,Mandai,Maros,Sulawesi Selatan,265
+3201015,Ciampea,Bogor,Jawa Barat,260
+7309008,Marusu,Maros,Sulawesi Selatan,255
+3217002,Parongpong,Bandung Barat,Jawa Barat,253
+3273010,Astana Anyar,Kota Bandung,Jawa Barat,253
+7308022,Tanete Riattang Barat,Bone,Sulawesi Selatan,251
+1272004,Siantar Selatan,Kota Pematangsiantar,Sumatera Utara,245
+3171005,Cempaka Putih,Kota Administrasi Jakarta Pusat,DKI Jakarta,244
+7271006,Tatanga,Kota Palu,Sulawesi Tengah,244
+5171002,Denpasar Timur,Kota Denpasar,Bali,242
+1208001,Siantar,Simalungun,Sumatera Utara,238
+7310004,Pangkajene,Pangkajene Kepulauan,Sulawesi Selatan,233
+3671008,Periuk,Kota Tangerang,Banten,232
+1272008,Siantar Marimbun,Kota Pematangsiantar,Sumatera Utara,224
+7306002,Bajeng,Gowa,Sulawesi Selatan,217
+3201005,Babakan Madang,Bogor,Jawa Barat,216
+3273019,Sumur Bandung,Kota Bandung,Jawa Barat,216
+1275005,Binjai Selatan,Kota Binjai,Sumatera Utara,213
+3671013,Larangan,Kota Tangerang,Banten,211
+3217004,Cikalongwetan,Bandung Barat,Jawa Barat,211
+3201029,Ciomas,Bogor,Jawa Barat,210
+7271002,Palu Barat,Kota Palu,Sulawesi Tengah,210
+1209008,Meranti,Asahan,Sumatera Utara,202
+3215026,Karawang Timur,Karawang,Jawa Barat,198
+5103001,Kuta,Badung,Bali,195
+3273012,Batununggal,Kota Bandung,Jawa Barat,195
+3216010,Karang Bahagia,Bekasi,Jawa Barat,194
+1209013,Air Batu,Asahan,Sumatera Utara,191
+3273004,Bojongloa Kaler,Kota Bandung,Jawa Barat,186
+1207033,Beringin,Deli Serdang,Sumatera Utara,185
+1208023,Bandar,Simalungun,Sumatera Utara,183
+3271002,Bogor Timur,Kota Bogor,Jawa Barat,182
+3273006,Cicendo,Kota Bandung,Jawa Barat,182
+3216011,Cikarang Timur,Bekasi,Jawa Barat,179
+1219003,Air Putih,Batu Bara,Sumatera Utara,179
+3217001,Lembang,Bandung Barat,Jawa Barat,177
+1218002,Perbaungan,Serdang Bedagai,Sumatera Utara,174
+7210001,Sigi Biromaru,Sigi,Sulawesi Tengah,173
+7371008,Ujung Tanah,Kota Makassar,Sulawesi Selatan,169
+1209030,Pulo Bandring,Asahan,Sumatera Utara,169
+1219009,Lima Puluh,Batu Bara,Sumatera Utara,168
+1219004,Lima Puluh,Batu Bara,Sumatera Utara,168
+3211015,Jatinangor,Sumedang,Jawa Barat,167
+5171004,Denpasar Utara,Kota Denpasar,Bali,161
+3217011,Cililin,Bandung Barat,Jawa Barat,160
+3273018,Cibeunying Kaler,Kota Bandung,Jawa Barat,158
+3603017,Curug,Tangerang,Banten,154
+1274005,Datuk Bandar,Kota Tanjung Balai,Sumatera Utara,153
+3273003,Babakan Ciparay,Kota Bandung,Jawa Barat,152
+3204013,Banjaran,Bandung,Jawa Barat,152
+3603023,Cisauk,Tangerang,Banten,149
+1208002,Gunung Malela,Simalungun,Sumatera Utara,149
+1208011,Tanah Jawa,Simalungun,Sumatera Utara,147
+3203001,Cianjur,Cianjur,Jawa Barat,146
+7306013,Pattalasang,Gowa,Sulawesi Selatan,140
+7308021,Tanete Riattang,Bone,Sulawesi Selatan,139
+3273020,Antapani,Kota Bandung,Jawa Barat,139
+3201032,Klapanunggal,Bogor,Jawa Barat,139
+3273005,Andir,Kota Bandung,Jawa Barat,136
+7326002,Sesean,Toraja Utara,Sulawesi Selatan,136
+1219011,Datuk Tanah Datar,Batu Bara,Sumatera Utara,134
+1275002,Binjai Kota,Kota Binjai,Sumatera Utara,134
+1205007,Stabat,Langkat,Sumatera Utara,134
+3275007,Bantargebang,Kota Bekasi,Jawa Barat,129
+3217003,Cisarua,Bandung Barat,Jawa Barat,129
+1205006,Selesai,Langkat,Sumatera Utara,128
+1209012,Simpang Empat,Asahan,Sumatera Utara,127
+1171002,Kuta Alam,Kota Banda Aceh,Aceh,127
+1171005,Lueng Bata,Kota Banda Aceh,Aceh,126
+3217007,Cipatat,Bandung Barat,Jawa Barat,125
+3273014,Cibeunying Kidul,Kota Bandung,Jawa Barat,125
+1271008,Medan Belawan,Kota Medan,Sumatera Utara,124
+3272002,Cikole,Kota Sukabumi,Jawa Barat,122
+3204033,Majalaya,Bandung,Jawa Barat,119
+1171004,Syiah Kuala,Kota Banda Aceh,Aceh,118
+3201007,Cileungsi,Bogor,Jawa Barat,118
+1208003,Gunung Maligas,Simalungun,Sumatera Utara,117
+1171007,Banda Raya,Kota Banda Aceh,Aceh,116
+1219005,Talawi,Batu Bara,Sumatera Utara,114
+3671010,Neglasari,Kota Tangerang,Banten,113
+1209023,Sei Dadap,Asahan,Sumatera Utara,113
+3204016,Arjasari,Bandung,Jawa Barat,112
+3215003,Telukjambe Timur,Karawang,Jawa Barat,111
+3671002,Jatiuwung,Kota Tangerang,Banten,110
+3204005,Cileunyi,Bandung,Jawa Barat,108
+3204029,Ciparay,Bandung,Jawa Barat,107
+3204039,Ciwidey,Bandung,Jawa Barat,107
+3211017,Sumedang Selatan,Sumedang,Jawa Barat,102
+3215005,Klari,Karawang,Jawa Barat,99
+1272005,Siantar Marihat,Kota Pematangsiantar,Sumatera Utara,97
+7271004,Palu Utara,Kota Palu,Sulawesi Tengah,97
+3215006,Rengasdengklok,Karawang,Jawa Barat,96
+1219012,Nibung Hangus,Batu Bara,Sumatera Utara,93
+3204046,Kutawaringin,Bandung,Jawa Barat,92
+7309012,Lau,Maros,Sulawesi Selatan,91
+3201033,Ciseeng,Bogor,Jawa Barat,90
+1208028,Tapian Dolok,Simalungun,Sumatera Utara,89
+3215021,Majalaya,Karawang,Jawa Barat,89
+1209017,Bandar Pasir Mandoge,Asahan,Sumatera Utara,89
+3273030,Mandalajati,Kota Bandung,Jawa Barat,88
+3171008,Johar Baru,Kota Administrasi Jakarta Pusat,DKI Jakarta,88
+3204017,Cimaung,Bandung,Jawa Barat,87
+7206010,Bahodopi,Morowali,Sulawesi Tengah,86
+7313006,Tempe,Wajo,Sulawesi Selatan,86
+1210009,Bilah Hulu,Labuhanbatu,Sumatera Utara,85
+1208004,Panei,Simalungun,Sumatera Utara,85
+3272004,Warudoyong,Kota Sukabumi,Jawa Barat,85
+3201018,Rumpin,Bogor,Jawa Barat,79
+1219002,Sei Suka,Batu Bara,Sumatera Utara,79
+1219010,Datuk Lima Puluh,Batu Bara,Sumatera Utara,78
+1171001,Baiturrahman,Kota Banda Aceh,Aceh,78
+1106010,Ingin Jaya,Aceh Besar,Aceh,78
+1171008,Jaya Baru,Kota Banda Aceh,Aceh,76
+3603029,Sindang Jaya,Tangerang,Banten,76
+3205005,Tarogong Kidul,Garut,Jawa Barat,76
+3204034,Solokanjeruk,Bandung,Jawa Barat,74
+1209031,Teluk Dalam,Asahan,Sumatera Utara,74
+3273028,Panyileukan,Kota Bandung,Jawa Barat,74
+3204028,Rancaekek,Bandung,Jawa Barat,72
+3202029,Cisaat,Sukabumi,Jawa Barat,72
+3201006,Jonggol,Bogor,Jawa Barat,72
+1208005,Panombeian Pane,Simalungun,Sumatera Utara,71
+3273025,Cibiru,Kota Bandung,Jawa Barat,71
+3201025,Cisarua,Bogor,Jawa Barat,70
+1106012,Darussalam,Aceh Besar,Aceh,70
+3216015,Sukatani,Bekasi,Jawa Barat,70
+1208029,Raya,Simalungun,Sumatera Utara,70
+1209029,Rawang Panca Arga,Asahan,Sumatera Utara,70
+3217012,Cipongkor,Bandung Barat,Jawa Barat,69
+3201024,Ciawi,Bogor,Jawa Barat,67
+1106007,Darul Imarah,Aceh Besar,Aceh,67
+3273008,Cidadap,Kota Bandung,Jawa Barat,67
+1208017,Dolok Batu Nanggar,Simalungun,Sumatera Utara,66
+3204044,Cangkuang,Bandung,Jawa Barat,65
+3603019,Panongan,Tangerang,Banten,64
+3217005,Cipeundeuy,Bandung Barat,Jawa Barat,64
+1219006,Tanjung Tiram,Batu Bara,Sumatera Utara,63
+7271005,Ulujadi,Kota Palu,Sulawesi Tengah,63
+1218004,Sei Rampah,Serdang Bedagai,Sumatera Utara,61
+1223005,Marbau,Labuhanbatu Utara,Sumatera Utara,61
+3603030,Sepatan Timur,Tangerang,Banten,61
+1217008,Pangururan,Samosir,Sumatera Utara,61
+1274006,Datuk Bandar Timur,Kota Tanjung Balai,Sumatera Utara,60
+1219001,Medang Deras,Batu Bara,Sumatera Utara,60
+1275003,Binjai Barat,Kota Binjai,Sumatera Utara,59
+7271007,Tawaeli,Kota Palu,Sulawesi Tengah,58
+7309007,Tanralili,Maros,Sulawesi Selatan,58
+1221007,Barumun,Padang Lawas,Sumatera Utara,58
+1206001,Kabanjahe,Karo,Sumatera Utara,58
+1209014,Pulau Rakyat,Asahan,Sumatera Utara,58
+3201034,Ranca Bungur,Bogor,Jawa Barat,57
+1207004,Kutalimbaru,Deli Serdang,Sumatera Utara,57
+7308014,Ulaweng,Bone,Sulawesi Selatan,57
+7326001,Rantepao,Toraja Utara,Sulawesi Selatan,57
+3603013,Teluknaga,Tangerang,Banten,56
+3204036,Ibun,Bandung,Jawa Barat,56
+1276002,Rambutan,Kota Tebing Tinggi,Sumatera Utara,56
+3273026,Ujungberung,Kota Bandung,Jawa Barat,56
+3201027,Caringin,Bogor,Jawa Barat,55
+3215027,Telukjambe Barat,Karawang,Jawa Barat,55
+5103005,Kuta Selatan,Badung,Bali,55
+1218016,Tebing Syahbandar,Serdang Bedagai,Sumatera Utara,55
+7310006,Bungoro,Pangkajene Kepulauan,Sulawesi Selatan,55
+1106008,Peukan Bada,Aceh Besar,Aceh,55
+1209028,Silau Laut,Asahan,Sumatera Utara,54
+3204038,Pasirjambu,Bandung,Jawa Barat,53
+1223006,Na IX-X,Labuhanbatu Utara,Sumatera Utara,52
+3203007,Karangtengah,Cianjur,Jawa Barat,51
+1209026,Tinggi Raja,Asahan,Sumatera Utara,50
+5103006,Kuta Utara,Badung,Bali,50
+3216018,Setu,Bekasi,Jawa Barat,50
+3205004,Tarogong Kaler,Garut,Jawa Barat,50
+1274004,Teluk Nibung,Kota Tanjung Balai,Sumatera Utara,50
+7310010,Minasa Tene,Pangkajene Kepulauan,Sulawesi Selatan,49
+1208006,Jorlang Hataran,Simalungun,Sumatera Utara,49
+1171009,Ulee Kareng,Kota Banda Aceh,Aceh,49
+3216019,Cikarang Selatan,Bekasi,Jawa Barat,49
+3273024,Arcamanik,Kota Bandung,Jawa Barat,47
+3211022,Cimalaka,Sumedang,Jawa Barat,47
+3603020,Legok,Tangerang,Banten,47
+3272005,Baros,Kota Sukabumi,Jawa Barat,46
+1208013,Dolok Panribuan,Simalungun,Sumatera Utara,46
+3202028,Cicantayan,Sukabumi,Jawa Barat,46
+1207019,Galang,Deli Serdang,Sumatera Utara,46
+1208021,Pematang Bandar,Simalungun,Sumatera Utara,45
+1218015,Sei Bamban,Serdang Bedagai,Sumatera Utara,44
+3201026,Megamendung,Bogor,Jawa Barat,44
+3204025,Cicalengka,Bandung,Jawa Barat,43
+3201003,Citeureup,Bogor,Jawa Barat,43
+3671004,Benda,Kota Tangerang,Banten,42
+1205005,Binjai,Langkat,Sumatera Utara,41
+3603018,Cikupa,Tangerang,Banten,41
+3201017,Pamijahan,Bogor,Jawa Barat,41
+1218003,Teluk Mengkudu,Serdang Bedagai,Sumatera Utara,40
+1205011,Tanjung Pura,Langkat,Sumatera Utara,40
+3211014,Cimanggung,Sumedang,Jawa Barat,40
+3201014,Leuwiliang,Bogor,Jawa Barat,40
+3205009,Leles,Garut,Jawa Barat,39
+3216020,Cikarang Pusat,Bekasi,Jawa Barat,39
+3215022,Jayakerta,Karawang,Jawa Barat,38
+1277002,Padangsidimpuan Selatan,Kota Padang Sidempuan,Sumatera Utara,38
+1223001,Kualuh Hulu,Labuhanbatu Utara,Sumatera Utara,38
+1276003,Padang Hilir,Kota Tebing Tinggi,Sumatera Utara,38
+1171003,Meuraxa,Kota Banda Aceh,Aceh,36
+1208016,Girsang Sipangan Bolon,Simalungun,Sumatera Utara,36
+3203005,Ciranjang,Cianjur,Jawa Barat,36
+7313008,Tanasitolo,Wajo,Sulawesi Selatan,36
+3217014,Sindangkerta,Bandung Barat,Jawa Barat,36
+1218001,Pantai Cermin,Serdang Bedagai,Sumatera Utara,36
+1208010,Pematang Sidamanik,Simalungun,Sumatera Utara,35
+3201016,Cibungbulang,Bogor,Jawa Barat,35
+1208024,Bandar Masilam,Simalungun,Sumatera Utara,35
+1207007,Sibiru-Biru,Deli Serdang,Sumatera Utara,35
+3204015,Pangalengan,Bandung,Jawa Barat,34
+7305009,Galesong,Takalar,Sulawesi Selatan,34
+7310007,Labakkang,Pangkajene Kepulauan,Sulawesi Selatan,34
+1209010,Tanjung Balai,Asahan,Sumatera Utara,34
+3209014,Talun,Cirebon,Jawa Barat,33
+3217015,Gununghalu,Bandung Barat,Jawa Barat,33
+1210007,Bilah Barat,Labuhanbatu,Sumatera Utara,32
+3324003,Sukorejo,Kendal,Jawa Tengah,32
+1276001,Padang Hulu,Kota Tebing Tinggi,Sumatera Utara,32
+1219008,Laut Tador,Batu Bara,Sumatera Utara,32
+7201008,Bualemo,Banggai,Sulawesi Tengah,32
+3215029,Purwasari,Karawang,Jawa Barat,32
+3273027,Gedebage,Kota Bandung,Jawa Barat,31
+1205004,Sei Bingai,Langkat,Sumatera Utara,31
+3603016,Sepatan,Tangerang,Banten,30
+1274001,Tanjung Balai Selatan,Kota Tanjung Balai,Sumatera Utara,30
+1207032,Pantai Labu,Deli Serdang,Sumatera Utara,30
+1208009,Sidamanik,Simalungun,Sumatera Utara,30
+3204006,Cimenyan,Bandung,Jawa Barat,29
+3201028,Cijeruk,Bogor,Jawa Barat,29
+3217016,Saguling,Bandung Barat,Jawa Barat,29
+3204027,Cikancung,Bandung,Jawa Barat,29
+7201021,Luwuk Utara,Banggai,Sulawesi Tengah,28
+1207031,Pagar Merbau,Deli Serdang,Sumatera Utara,28
+7308017,Tellu Siattinge,Bone,Sulawesi Selatan,28
+1206002,Berastagi,Karo,Sumatera Utara,28
+3272006,Lembursitu,Kota Sukabumi,Jawa Barat,27
+1211001,Sidikalang,Dairi,Sumatera Utara,26
+1208030,Ujung Padang,Simalungun,Sumatera Utara,26
+3215017,Telagasari,Karawang,Jawa Barat,26
+3201019,Jasinga,Bogor,Jawa Barat,26
+3273029,Cinambo,Kota Bandung,Jawa Barat,26
+1106021,Krueng Barona Jaya,Aceh Besar,Aceh,25
+1207008,Stm Hilir,Deli Serdang,Sumatera Utara,25
+3272003,Citamiang,Kota Sukabumi,Jawa Barat,25
+1212001,Balige,Toba,Sumatera Utara,25
+1277001,Padangsidimpuan Utara,Kota Padang Sidempuan,Sumatera Utara,25
+7308015,Palakka,Bone,Sulawesi Selatan,24
+3204007,Cilengkrang,Bandung,Jawa Barat,24
+7305007,Pattallassang,Takalar,Sulawesi Selatan,23
+3211008,Paseh,Sumedang,Jawa Barat,23
+1274003,Sei Tualang Raso,Kota Tanjung Balai,Sumatera Utara,23
+3204030,Pacet,Bandung,Jawa Barat,23
+1273002,Sibolga Kota,Kota Sibolga,Sumatera Utara,23
+1207003,Sibolangit,Deli Serdang,Sumatera Utara,23
+7308016,Awangpone,Bone,Sulawesi Selatan,23
+3216003,Sukawangi,Bekasi,Jawa Barat,23
+1208012,Hatonduhan,Simalungun,Sumatera Utara,22
+3201040,Tenjolaya,Bogor,Jawa Barat,22
+1208022,Bandar Huluan,Simalungun,Sumatera Utara,22
+3603014,Kosambi,Tangerang,Banten,21
+3205011,Leuwigoong,Garut,Jawa Barat,21
+3211016,Rancakalong,Sumedang,Jawa Barat,21
+3601006,Panimbang,Pandeglang,Banten,21
+1201003,Pandan,Tapanuli Tengah,Sumatera Utara,21
+1205008,Wampu,Langkat,Sumatera Utara,21
+1208008,Bosar Maligas,Simalungun,Sumatera Utara,20
+3205002,Karangpawitan,Garut,Jawa Barat,20
+7306001,Bontonompo,Gowa,Sulawesi Selatan,20
+1223003,Kualuh Hilir,Labuhanbatu Utara,Sumatera Utara,20
+1222001,Kotapinang,Labuhanbatu Selatan,Sumatera Utara,20
+3205012,Cibatu,Garut,Jawa Barat,19
+1209021,Aek Songsongan,Asahan,Sumatera Utara,19
+7308009,Barebbo,Bone,Sulawesi Selatan,19
+1205003,Kuala,Langkat,Sumatera Utara,19
+1218006,Bandar Khalipah,Serdang Bedagai,Sumatera Utara,19
+1218014,Pegajahan,Serdang Bedagai,Sumatera Utara,19
+7203019,Tanantovea,Donggala,Sulawesi Tengah,19
+7308026,Bengo,Bone,Sulawesi Selatan,18
+3205038,Bl. Limbangan,Garut,Jawa Barat,18
+7313010,Pitumpanua,Wajo,Sulawesi Selatan,18
+1171006,Kuta Raja,Kota Banda Aceh,Aceh,18
+1813001,Pesisir Tengah,Pesisir Barat,Lampung,18
+1209018,Aek Kuasan,Asahan,Sumatera Utara,18
+3205019,Cilawu,Garut,Jawa Barat,18
+7326011,Tallunglipu,Toraja Utara,Sulawesi Selatan,18
+3216013,Pebayuran,Bekasi,Jawa Barat,18
+1604031,Lahat Selatan,Lahat,Sumatera Selatan,18
+1209011,Sei Kepayang,Asahan,Sumatera Utara,18
+1277005,Padangsidimpuan Tenggara,Kota Padang Sidempuan,Sumatera Utara,18
+5103002,Mengwi,Badung,Bali,18
+7210012,Dolo,Sigi,Sulawesi Tengah,18
+7308023,Tanete Riattang Timur,Bone,Sulawesi Selatan,18
+7201020,Luwuk Selatan,Banggai,Sulawesi Tengah,17
+1213001,Panyabungan,Mandailing Natal,Sumatera Utara,17
+1205010,Hinai,Langkat,Sumatera Utara,17
+3202011,Cibadak,Sukabumi,Jawa Barat,16
+1210020,Panai Hulu,Labuhanbatu,Sumatera Utara,16
+7308010,Cina,Bone,Sulawesi Selatan,16
+3302017,Cilongok,Banyumas,Jawa Tengah,16
+3203002,Warungkondang,Cianjur,Jawa Barat,16
+3603009,Kemiri,Tangerang,Banten,16
+3205006,Banyuresmi,Garut,Jawa Barat,16
+1210014,Pangkatan,Labuhanbatu,Sumatera Utara,15
+7201004,Luwuk,Banggai,Sulawesi Tengah,15
+3201031,Tamansari,Bogor,Jawa Barat,15
+7308004,Salomekko,Bone,Sulawesi Selatan,15
+1173002,Banda Sakti,Kota Lhokseumawe,Aceh,14
+7317011,Ponrang,Luwu,Sulawesi Selatan,14
+7471003,Baruga,Kota Kendari,Sulawesi Tenggara,14
+1212008,Ajibata,Toba,Sumatera Utara,14
+1208014,Purba,Simalungun,Sumatera Utara,14
+3203008,Mande,Cianjur,Jawa Barat,14
+3211006,Situraja,Sumedang,Jawa Barat,14
+1276005,Tebing Tinggi Kota,Kota Tebing Tinggi,Sumatera Utara,14
+7602003,Kalukku,Mamuju,Sulawesi Barat,14
+3204026,Nagreg,Bandung,Jawa Barat,14
+1804007,Way Tenong,Lampung Barat,Lampung,14
+1210008,Bilah Hilir,Labuhanbatu,Sumatera Utara,13
+3603005,Cisoka,Tangerang,Banten,12
+1205014,Babalan,Langkat,Sumatera Utara,12
+1273001,Sibolga Utara,Kota Sibolga,Sumatera Utara,12
+3601008,Munjul,Pandeglang,Banten,12
+1209015,Bandar Pulau,Asahan,Sumatera Utara,12
+1276004,Bajenis,Kota Tebing Tinggi,Sumatera Utara,12
+1806004,Pulau Panggung,Tanggamus,Lampung,12
+7306004,Tinggimoncong,Gowa,Sulawesi Selatan,12
+7604008,Mapilli,Polewali Mandar,Sulawesi Barat,12
+1209024,Sei Kepayang Barat,Asahan,Sumatera Utara,12
+1203001,Angkola Barat,Tapanuli Selatan,Sumatera Utara,12
+3272001,Gunungpuyuh,Kota Sukabumi,Jawa Barat,12
+7307003,Sinjai Timur,Sinjai,Sulawesi Selatan,12
+3211020,Tanjungkerta,Sumedang,Jawa Barat,12
+1218013,Tebing Tinggi,Serdang Bedagai,Sumatera Utara,12
+7322003,Masamba,Luwu Utara,Sulawesi Selatan,12
+1201020,Sarudik,Tapanuli Tengah,Sumatera Utara,11
+7308024,Amali,Bone,Sulawesi Selatan,11
+1106020,Baitussalam,Aceh Besar,Aceh,11
+1209027,Setia Janji,Asahan,Sumatera Utara,11
+7316004,Anggeraja,Enrekang,Sulawesi Selatan,11
+3216014,Sukakarya,Bekasi,Jawa Barat,11
+3202033,Sukaraja,Sukabumi,Jawa Barat,11
+1205002,Salapian,Langkat,Sumatera Utara,11
+3202013,Parungkuda,Sukabumi,Jawa Barat,11
+1208019,Jawa Maraja Bah Jambi,Simalungun,Sumatera Utara,11
+1208020,Dolok Pardamean,Simalungun,Sumatera Utara,11
+3205040,Cibiuk,Garut,Jawa Barat,11
+3601014,Saketi,Pandeglang,Banten,10
+3205007,Samarang,Garut,Jawa Barat,10
+7206005,Bungku Tengah,Morowali,Sulawesi Tengah,10
+3602023,Curug Bitung,Lebak,Banten,10
+7310008,Marang,Pangkajene Kepulauan,Sulawesi Selatan,10
+7602001,Mamuju,Mamuju,Sulawesi Barat,10
+7309003,Bantimurung,Maros,Sulawesi Selatan,10
+7372004,Bacukiki Barat,Kota Pare Pare,Sulawesi Selatan,10
+3302018,Karanglewas,Banyumas,Jawa Tengah,10
+3201038,Cigombong,Bogor,Jawa Barat,10
+1277003,Padangsidimpuan Batunadua,Kota Padang Sidempuan,Sumatera Utara,10
+1221008,Sosa,Padang Lawas,Sumatera Utara,10
+1218007,Dolok Merawan,Serdang Bedagai,Sumatera Utara,10
+3304020,Pagedongan,Banjarnegara,Jawa Tengah,10
+3217013,Rongga,Bandung Barat,Jawa Barat,10
+1215002,Kerajaan,Pakpak Bharat,Sumatera Utara,10
+3205010,Kadungora,Garut,Jawa Barat,10
+3202032,Sukabumi,Sukabumi,Jawa Barat,10
+3215007,Kutawaluya,Karawang,Jawa Barat,10
+1205013,Gebang,Langkat,Sumatera Utara,9
+3205017,Bayongbong,Garut,Jawa Barat,9
+7311003,Barru,Barru,Sulawesi Selatan,9
+7313001,Sabangparu,Wajo,Sulawesi Selatan,9
+3215002,Pangkalan,Karawang,Jawa Barat,9
+1205016,Besitang,Langkat,Sumatera Utara,9
+7203010,Sindue,Donggala,Sulawesi Tengah,9
+3201022,Cigudeg,Bogor,Jawa Barat,9
+5102005,Tabanan,Tabanan,Bali,9
+7309005,Bontoa,Maros,Sulawesi Selatan,9
+1217001,Simanindo,Samosir,Sumatera Utara,8
+1202009,Siborong-Borong,Tapanuli Utara,Sumatera Utara,8
+1220005,Padang Bolak Julu,Padang Lawas Utara,Sumatera Utara,8
+3272007,Cibeureum,Kota Sukabumi,Jawa Barat,8
+1804011,Sukau,Lampung Barat,Lampung,8
+3203011,Cugenang,Cianjur,Jawa Barat,8
+1211002,Sumbul,Dairi,Sumatera Utara,8
+1216005,Lintong Nihuta,Humbang Hasundutan,Sumatera Utara,8
+7315011,Paleteang,Pinrang,Sulawesi Selatan,8
+1274002,Tanjung Balai Utara,Kota Tanjung Balai,Sumatera Utara,8
+7209005,Ampana Kota,Tojo Una Una,Sulawesi Tengah,8
+3211019,Ganeas,Sumedang,Jawa Barat,8
+3601034,Majasari,Pandeglang,Banten,8
+7604002,Campalagian,Polewali Mandar,Sulawesi Barat,8
+7308019,Dua Boccoe,Bone,Sulawesi Selatan,8
+7304006,Bangkala Barat,Jeneponto,Sulawesi Selatan,8
+1211013,Berampu,Dairi,Sumatera Utara,8
+7308020,Cenrana,Bone,Sulawesi Selatan,8
+7305004,Polombangkeng Utara,Takalar,Sulawesi Selatan,8
+7606004,Topoyo,Mamuju Tengah,Sulawesi Barat,8
+3215010,Pedes,Karawang,Jawa Barat,8
+3404004,Minggir,Sleman,DI Yogyakarta,8
+1223004,Aek Kuo,Labuhanbatu Utara,Sumatera Utara,8
+1221015,Sosa Julu,Padang Lawas,Sumatera Utara,8
+1117006,Wih Pesam,Bener Meriah,Aceh,8
+1202002,Siatas Barita,Tapanuli Utara,Sumatera Utara,8
+7372002,Ujung,Kota Pare Pare,Sulawesi Selatan,8
+7306018,Bajeng Barat,Gowa,Sulawesi Selatan,7
+1209022,Rahunig,Asahan,Sumatera Utara,7
+3603004,Jambe,Tangerang,Banten,7
+1202001,Tarutung,Tapanuli Utara,Sumatera Utara,7
+3205020,Cisurupan,Garut,Jawa Barat,7
+3205003,Wanaraja,Garut,Jawa Barat,7
+1106006,Sukamakmur,Aceh Besar,Aceh,7
+5103003,Abiansemal,Badung,Bali,7
+1201002,Sorkam,Tapanuli Tengah,Sumatera Utara,7
+3214013,Bungursari,Purwakarta,Jawa Barat,7
+3214006,Darangdan,Purwakarta,Jawa Barat,7
+7308008,Sibulue,Bone,Sulawesi Selatan,7
+1802007,Terbanggi Besar,Lampung Tengah,Lampung,7
+1201006,Kolang,Tapanuli Tengah,Sumatera Utara,7
+3603003,Tigaraksa,Tangerang,Banten,7
+3211007,Conggeang,Sumedang,Jawa Barat,7
+3214004,Plered,Purwakarta,Jawa Barat,7
+3325011,Batang,Batang,Jawa Tengah,6
+7302005,Herlang,Bulukumba,Sulawesi Selatan,6
+7212002,Petasia Timur,Morowali Utara,Sulawesi Tengah,6
+7604004,Polewali,Polewali Mandar,Sulawesi Barat,6
+7201013,Nuhon,Banggai,Sulawesi Tengah,6
+3205001,Garut Kota,Garut,Jawa Barat,6
+3509002,Kencong,Jember,Jawa Timur,6
+9671005,Sorong Utara,Kota Sorong,Papua Barat Daya,6
+7201007,Pagimana,Banggai,Sulawesi Tengah,6
+5371004,Oebobo,Kota Kupang,Nusa Tenggara Timur,6
+7208003,Tinombo,Parigi Moutong,Sulawesi Tengah,6
+9605007,Aitinyo Utara,Maybrat,Papua Barat Daya,6
+5104005,Ubud,Gianyar,Bali,6
+1207020,Stm Hulu,Deli Serdang,Sumatera Utara,6
+7210011,Dolo Barat,Sigi,Sulawesi Tengah,6
+3215028,Tegalwaru,Karawang,Jawa Barat,6
+3215018,Rawamerta,Karawang,Jawa Barat,6
+1202013,Pangaribuan,Tapanuli Utara,Sumatera Utara,6
+3471002,Jetis,Kota Yogyakarta,DI Yogyakarta,6
+1809001,Gedong Tataan,Pesawaran,Lampung,6
+3604015,Cikande,Serang,Banten,6
+3201009,Sukamakmur,Bogor,Jawa Barat,6
+3673001,Serang,Kota Serang,Banten,6
+3304006,Banjarnegara,Banjarnegara,Jawa Tengah,6
+3204040,Rancabali,Bandung,Jawa Barat,6
+1206010,Mardingding,Karo,Sumatera Utara,6
+3509013,Rambipuji,Jember,Jawa Timur,6
+3604024,Pamarayan,Serang,Banten,6
+7203009,Labuan,Donggala,Sulawesi Tengah,6
+1208015,Haranggaol Horison,Simalungun,Sumatera Utara,6
+3203004,Cilaku,Cianjur,Jawa Barat,6
+7313002,Pammana,Wajo,Sulawesi Selatan,6
+3325012,Warungasem,Batang,Jawa Tengah,6
+1221010,Barumun Selatan,Padang Lawas,Sumatera Utara,6
+3511005,Pujer,Bondowoso,Jawa Timur,6
+3304005,Bawang,Banjarnegara,Jawa Tengah,6
+1212009,Lumban Julu,Toba,Sumatera Utara,6
+2171003,Sekupang,Kota Batam,Kepulauan Riau,6
+3513009,Gading,Probolinggo,Jawa Timur,6
+7401018,Tanggetada,Kolaka,Sulawesi Tenggara,6
+1211009,Pegagan Hilir,Dairi,Sumatera Utara,6
+1808001,Blambangan Umpu,Way Kanan,Lampung,6
+9671002,Sorong Timur,Kota Sorong,Papua Barat Daya,6
+1203021,Sayur Matinggi,Tapanuli Selatan,Sumatera Utara,6
+1802009,Rumbia,Lampung Tengah,Lampung,6
+3215023,Cilamaya Kulon,Karawang,Jawa Barat,6
+1604010,Lahat,Lahat,Sumatera Selatan,6
+1223002,Kualuh Leidong,Labuhanbatu Utara,Sumatera Utara,5
+3211023,Cisarua,Sumedang,Jawa Barat,5
+1206006,Munte,Karo,Sumatera Utara,5
+1209032,Aek Ledong,Asahan,Sumatera Utara,5
+1203002,Batang Toru,Tapanuli Selatan,Sumatera Utara,5
+1205009,Secanggang,Langkat,Sumatera Utara,5
+5108006,Buleleng,Buleleng,Bali,5
+1223008,Kualuh Selatan,Labuhanbatu Utara,Sumatera Utara,5
+7305002,Mangarabombang,Takalar,Sulawesi Selatan,5
+1208018,Huta Bayu Raja,Simalungun,Sumatera Utara,5
+7305008,Sanrobone,Takalar,Sulawesi Selatan,5
+3471010,Gondomanan,Kota Yogyakarta,DI Yogyakarta,5
+5104001,Sukawati,Gianyar,Bali,5
+7208001,Parigi,Parigi Moutong,Sulawesi Tengah,5
+1805020,Banjar Margo,Tulang Bawang,Lampung,4
+7209010,Ratolindo,Tojo Una Una,Sulawesi Tengah,4
+3304012,Punggelan,Banjarnegara,Jawa Tengah,4
+1206003,Barusjahe,Karo,Sumatera Utara,4
+3471006,Ngampilan,Kota Yogyakarta,DI Yogyakarta,4
+3301003,Adipala,Cilacap,Jawa Tengah,4
+1202006,Pahae Jae,Tapanuli Utara,Sumatera Utara,4
+3205015,Sukawening,Garut,Jawa Barat,4
+1806020,Gisting,Tanggamus,Lampung,4
+1813011,Bangkunat,Pesisir Barat,Lampung,4
+3323011,Tretep,Temanggung,Jawa Tengah,4
+3513008,Krucil,Probolinggo,Jawa Timur,4
+1102004,Babussalam,Aceh Tenggara,Aceh,4
+1604008,Pulaupinang,Lahat,Sumatera Selatan,4
+3602015,Warunggunung,Lebak,Banten,4
+1102012,Ketambe,Aceh Tenggara,Aceh,4
+3326008,Kajen,Pekalongan,Jawa Tengah,4
+3601018,Cimanuk,Pandeglang,Banten,4
+1609006,Buay Sandang Aji,Ogan Komering Ulu Selatan,Sumatera Selatan,4
+3324012,Weleri,Kendal,Jawa Tengah,4
+1806001,Kota Agung,Tanggamus,Lampung,4
+3404010,Kalasan,Sleman,DI Yogyakarta,4
+3203006,Bojongpicung,Cianjur,Jawa Barat,4
+3216021,Serang Baru,Bekasi,Jawa Barat,4
+1174002,Langsa Barat,Kota Langsa,Aceh,4
+1211004,Siempat Nempu,Dairi,Sumatera Utara,4
+1371009,Kuranji,Kota Padang,Sumatera Barat,4
+1208007,Raya Kahean,Simalungun,Sumatera Utara,4
+1211010,Parbuluan,Dairi,Sumatera Utara,4
+3303010,Karangreja,Purbalingga,Jawa Tengah,4
+3215012,Pakisjaya,Karawang,Jawa Barat,4
+1221011,Aek Nabara Barumun,Padang Lawas,Sumatera Utara,4
+3304003,Mandiraja,Banjarnegara,Jawa Tengah,4
+7302004,Bonto Tiro,Bulukumba,Sulawesi Selatan,4
+3202016,Cicurug,Sukabumi,Jawa Barat,4
+3603007,Kronjo,Tangerang,Banten,4
+1212002,Laguboti,Toba,Sumatera Utara,4
+3203009,Sukaluyu,Cianjur,Jawa Barat,4
+1809004,Way Lima,Pesawaran,Lampung,4
+3673003,Walantaka,Kota Serang,Banten,4
+5108002,Seririt,Buleleng,Bali,4
+7313014,Keera,Wajo,Sulawesi Selatan,4
+3513007,Tiris,Probolinggo,Jawa Timur,4
+3310020,Jatinom,Klaten,Jawa Tengah,4
+3601013,Menes,Pandeglang,Banten,4
+1273003,Sibolga Selatan,Kota Sibolga,Sumatera Utara,4
+7201009,Toili,Banggai,Sulawesi Tengah,4
+3601028,Carita,Pandeglang,Banten,4
+3324018,Ringinarum,Kendal,Jawa Tengah,4
+7208013,Toribulu,Parigi Moutong,Sulawesi Tengah,4
+1212022,Tampahan,Toba,Sumatera Utara,4
+1205001,Bahorok,Langkat,Sumatera Utara,4
+6501005,Tanjung Selor,Bulungan,Kalimantan Utara,4
+3602012,Sajira,Lebak,Banten,4
+7307005,Sinjai Utara,Sinjai,Sulawesi Selatan,4
+3211010,Buahdua,Sumedang,Jawa Barat,4
+7324001,Mangkutana,Luwu Timur,Sulawesi Selatan,4
+6409001,Penajam,Penajam Paser Utara,Kalimantan Timur,4
+3324004,Patean,Kendal,Jawa Tengah,4
+1222004,Sungai Kanan,Labuhanbatu Selatan,Sumatera Utara,4
+1804008,Sekincau,Lampung Barat,Lampung,4
+7602012,Simboro dan Kepulauan,Mamuju,Sulawesi Barat,4
+3511006,Grujugan,Bondowoso,Jawa Timur,4
+1801013,Jati Agung,Lampung Selatan,Lampung,4
+3509006,Tanggul,Jember,Jawa Timur,4
+7315006,Duampanua,Pinrang,Sulawesi Selatan,4
+7601004,Sarudu,Pasangkayu,Sulawesi Barat,4
+3603015,Pakuhaji,Tangerang,Banten,4
+7317014,Belopa Utara,Luwu,Sulawesi Selatan,4
+1212007,Porsea,Toba,Sumatera Utara,4
+3201023,Tenjo,Bogor,Jawa Barat,4
+3307009,Wonosobo,Wonosobo,Jawa Tengah,4
+3509021,Sumbersari,Jember,Jawa Timur,4
+7308005,Tonra,Bone,Sulawesi Selatan,3
+3603031,Solear,Tangerang,Banten,3
+7305005,Galesong Selatan,Takalar,Sulawesi Selatan,3
+1103023,Idi Timur,Aceh Timur,Aceh,3
+7309002,Camba,Maros,Sulawesi Selatan,3
+3303007,Kutasari,Purbalingga,Jawa Tengah,3
+3374006,Pedurungan,Kota Semarang,Jawa Tengah,3
+3202031,Caringin,Sukabumi,Jawa Barat,3
+3603011,Rajeg,Tangerang,Banten,3
+3215013,Cikampek,Karawang,Jawa Barat,3
+5204008,Sumbawa,Sumbawa,Nusa Tenggara Barat,3
+5102009,Baturiti,Tabanan,Bali,3
+3205022,Cikajang,Garut,Jawa Barat,3
+3214005,Sukatani,Purwakarta,Jawa Barat,3
+1210018,Panai Tengah,Labuhanbatu,Sumatera Utara,3
+1220004,Padang Bolak,Padang Lawas Utara,Sumatera Utara,3
+1206005,Merek,Karo,Sumatera Utara,3
+1871002,Sukarame,Kota Bandar Lampung,Lampung,3
+3205014,Malangbong,Garut,Jawa Barat,3
+1223007,Aek Natas,Labuhanbatu Utara,Sumatera Utara,3
+3203031,Haurwangi,Cianjur,Jawa Barat,3
+7306016,Bontonompo Selatan,Gowa,Sulawesi Selatan,3
+3573002,Klojen,Kota Malang,Jawa Timur,3
+3471005,Gedongtengen,Kota Yogyakarta,DI Yogyakarta,3
+1205015,Pangkalan Susu,Langkat,Sumatera Utara,2
+3213029,Ciater,Subang,Jawa Barat,2
+7326016,Tondon,Toraja Utara,Sulawesi Selatan,2
+7302007,Bulukumpa,Bulukumba,Sulawesi Selatan,2
+7316007,Cendana,Enrekang,Sulawesi Selatan,2
+1607002,Banyuasin II,Banyuasin,Sumatera Selatan,2
+3323009,Ngadirejo,Temanggung,Jawa Tengah,2
+7501010,Telaga Biru,Gorontalo,Gorontalo,2
+3325001,Wonotunggal,Batang,Jawa Tengah,2
+3504002,Boyolangu,Tulungagung,Jawa Timur,2
+1806011,Pugung,Tanggamus,Lampung,2
+3574001,Kademangan,Kota Probolinggo,Jawa Timur,2
+1609003,Banding Agung,Ogan Komering Ulu Selatan,Sumatera Selatan,2
+1803002,Kotabumi,Lampung Utara,Lampung,2
+7504004,Marisa,Pohuwato,Gorontalo,2
+3216022,Cibarusah,Bekasi,Jawa Barat,2
+3404008,Berbah,Sleman,DI Yogyakarta,2
+3603006,Kresek,Tangerang,Banten,2
+1174004,Langsa Lama,Kota Langsa,Aceh,2
+1222005,Silangkitang,Labuhanbatu Selatan,Sumatera Utara,2
+7402039,Morosi,Konawe,Sulawesi Tenggara,2
+7307002,Sinjai Selatan,Sinjai,Sulawesi Selatan,2
+1806019,Kota Agung Timur,Tanggamus,Lampung,2
+1103003,Idi Rayeuk,Aceh Timur,Aceh,2
+1220011,Halongonan Timur,Padang Lawas Utara,Sumatera Utara,2
+1801009,Penengahan,Lampung Selatan,Lampung,2
+3513016,Pejarakan,Probolinggo,Jawa Timur,2
+7303002,Bantaeng,Bantaeng,Sulawesi Selatan,2
+7303005,Pajukukang,Bantaeng,Sulawesi Selatan,2
+3325002,Bandar,Batang,Jawa Tengah,2
+1808014,Bumi Agung,Way Kanan,Lampung,2
+3604016,Kibin,Serang,Banten,2
+7302001,Gantorang,Bulukumba,Sulawesi Selatan,2
+5272003,Asakota,Kota Bima,Nusa Tenggara Barat,2
+3301006,Kroya,Cilacap,Jawa Tengah,2
+3511007,Curahdami,Bondowoso,Jawa Timur,2
+3323020,Gemawang,Temanggung,Jawa Tengah,2
+3511011,Bondowoso,Bondowoso,Jawa Timur,2
+1206008,Tigabinanga,Karo,Sumatera Utara,2
+3215025,Kota Baru,Karawang,Jawa Barat,2
+3215008,Batujaya,Karawang,Jawa Barat,2
+3304004,Purwanegara,Banjarnegara,Jawa Tengah,2
+1113001,Blangkejeren,Gayo Lues,Aceh,2
+7207004,Tinangkung,Banggai Kepulauan,Sulawesi Tengah,2
+3214008,Tegalwaru,Purwakarta,Jawa Barat,2
+1174003,Langsa Kota,Kota Langsa,Aceh,2
+1801008,Katibung,Lampung Selatan,Lampung,2
+6107002,Samalantan,Bengkayang,Kalimantan Barat,2
+7326019,Sesean Suloara,Toraja Utara,Sulawesi Selatan,2
+3673005,Cipocok Jaya,Kota Serang,Banten,2
+3601005,Cigeulis,Pandeglang,Banten,2
+1813009,Ngambur,Pesisir Barat,Lampung,2
+1213017,Muara Batang Gadis,Mandailing Natal,Sumatera Utara,2
+3519001,Kebon Sari,Madiun,Jawa Timur,2
+7106002,Kauditan,Minahasa Utara,Sulawesi Utara,2
+3601025,Karang Tanjung,Pandeglang,Banten,2
+1504003,Muara Bulian,Batanghari,Jambi,2
+1610016,Payaraman,Ogan Ilir,Sumatera Selatan,2
+3504009,Gondang,Tulungagung,Jawa Timur,2
+1804006,Belalau,Lampung Barat,Lampung,2
+7322011,Baebunta,Luwu Utara,Sulawesi Selatan,2
+3313001,Jatipuro,Karanganyar,Jawa Tengah,2
+7208002,Ampibabo,Parigi Moutong,Sulawesi Tengah,2
+3305016,Kuwarasan,Kebumen,Jawa Tengah,2
+3311011,Gatak,Sukoharjo,Jawa Tengah,2
+3513018,Gending,Probolinggo,Jawa Timur,2
+1471013,Tuahmadani,Kota Pekanbaru,Riau,2
+3513012,Paiton,Probolinggo,Jawa Timur,2
+1471008,Binawidya,Kota Pekanbaru,Riau,2
+1213019,Huta Bargot,Mandailing Natal,Sumatera Utara,2
+3401002,Wates,Kulon Progo,DI Yogyakarta,2
+3513015,Krejengan,Probolinggo,Jawa Timur,2
+3324020,Kaliwungu Selatan,Kendal,Jawa Tengah,2
+3326016,Wiradesa,Pekalongan,Jawa Tengah,2
+1206004,Tigapanah,Karo,Sumatera Utara,2
+3603010,Sukadiri,Tangerang,Banten,2
+3327009,Taman,Pemalang,Jawa Tengah,2
+7308018,Ajangale,Bone,Sulawesi Selatan,2
+3512016,Banyuglugur,Situbondo,Jawa Timur,2
+1812003,Tulang Bawang Udik,Tulang Bawang Barat,Lampung,2
+1401003,Tambang,Kampar,Riau,2
+7308003,Kajuara,Bone,Sulawesi Selatan,2
+7308007,Mare,Bone,Sulawesi Selatan,2
+3304011,Rakit,Banjarnegara,Jawa Tengah,2
+3508021,Sumbersuko,Lumajang,Jawa Timur,2
+3325005,Bawang,Batang,Jawa Tengah,2
+9171003,Abepura,Kota Jayapura,Papua,2
+3304016,Batur,Banjarnegara,Jawa Tengah,2
+3601010,Bojong,Pandeglang,Banten,2
+7310011,Mandalle,Pangkajene Kepulauan,Sulawesi Selatan,2
+1905006,Parittiga,Bangka Barat,Kepulauan Bangka Belitung,2
+7201011,Luwuk Timur,Banggai,Sulawesi Tengah,2
+3601035,Sobang,Pandeglang,Banten,2
+7314005,Panca Rijang,Sidenreng Rappang,Sulawesi Selatan,2
+1871014,Labuhan Ratu,Kota Bandar Lampung,Lampung,2
+3601026,Cikedal,Pandeglang,Banten,2
+1201007,Tapian Nauli,Tapanuli Tengah,Sumatera Utara,2
+5301024,Taebenu,Kupang,Nusa Tenggara Timur,2
+7313011,Bola,Wajo,Sulawesi Selatan,2
+3401006,Sentolo,Kulon Progo,DI Yogyakarta,2
+3304008,Madukara,Banjarnegara,Jawa Tengah,2
+3579003,Junrejo,Kota Batu,Jawa Timur,2
+3313013,Gondangrejo,Karanganyar,Jawa Tengah,2
+7601002,Pasangkayu,Pasangkayu,Sulawesi Barat,2
+1771001,Selebar,Kota Bengkulu,Bengkulu,2
+1609017,Buana Pemaca,Ogan Komering Ulu Selatan,Sumatera Selatan,2
+1807019,Pasir Sakti,Lampung Timur,Lampung,2
+3329010,Songgom,Brebes,Jawa Tengah,2
+7201003,Kintom,Banggai,Sulawesi Tengah,2
+9202012,Manokwari Barat,Manokwari,Papua Barat,2
+7208007,Bolano Lambunu,Parigi Moutong,Sulawesi Tengah,2
+3601009,Pagelaran,Pandeglang,Banten,2
+3402012,Banguntapan,Bantul,DI Yogyakarta,2
+7201019,Balantak Utara,Banggai,Sulawesi Tengah,2
+7309004,Maros Baru,Maros,Sulawesi Selatan,2
+9202015,Manokwari Selatan,Manokwari,Papua Barat,2
+7208021,Bolano,Parigi Moutong,Sulawesi Tengah,2
+7311005,Mallusetasi,Barru,Sulawesi Selatan,2
+7208005,Tomini,Parigi Moutong,Sulawesi Tengah,2
+1871003,Tanjungkarang Barat,Kota Bandar Lampung,Lampung,2
+9671009,Malaimsimsa,Kota Sorong,Papua Barat Daya,2
+7601008,Tikke Raya,Pasangkayu,Sulawesi Barat,2
+7571006,Kota Tengah,Kota Gorontalo,Gorontalo,2
+7604003,Wonomulyo,Polewali Mandar,Sulawesi Barat,2
+7201023,Nambo,Banggai,Sulawesi Tengah,2
+7212004,Lembo,Morowali Utara,Sulawesi Tengah,2
+3311010,Baki,Sukoharjo,Jawa Tengah,2
+1208026,Dolok Silau,Simalungun,Sumatera Utara,2
+7208012,Mepanga,Parigi Moutong,Sulawesi Tengah,2
+7309006,Malllawa,Maros,Sulawesi Selatan,2
+7209004,Ampana Tete,Tojo Una Una,Sulawesi Tengah,2
+1213004,Panyabungan Selatan,Mandailing Natal,Sumatera Utara,2
+6303013,Beruntung Baru,Banjar,Kalimantan Selatan,2
+1208031,Pamatang Silima Huta,Simalungun,Sumatera Utara,2
+3301004,Binangun,Cilacap,Jawa Tengah,2
+3602018,Cibadak,Lebak,Banten,2
+1671017,Jakabaring,Kota Palembang,Sumatera Selatan,2
+3509028,Ledokombo,Jember,Jawa Timur,2
+3210017,Sumberjaya,Majalengka,Jawa Barat,2
+5108001,Gerokgak,Buleleng,Bali,2
+1401006,Siak Hulu,Kampar,Riau,2
+1407005,Bagansinembah,Rokan Hilir,Riau,2
+6101013,Semparuk,Sambas,Kalimantan Barat,2
+3513005,Leces,Probolinggo,Jawa Timur,2
+1220010,Padang Bolak Tenggara,Padang Lawas Utara,Sumatera Utara,2
+1215001,Sitelu Tali Urang Jehe,Pakpak Bharat,Sumatera Utara,2
+1810001,Pringsewu,Pringsewu,Lampung,2
+3513017,Maron,Probolinggo,Jawa Timur,2
+1201008,Sibabangun,Tapanuli Tengah,Sumatera Utara,2
+1202004,Sipoholon,Tapanuli Utara,Sumatera Utara,2
+3404007,Depok,Sleman,DI Yogyakarta,2
+1205019,Batang Serangan,Langkat,Sumatera Utara,2
+3505009,Nglegok,Blitar,Jawa Timur,2
+1203003,Angkola Timur,Tapanuli Selatan,Sumatera Utara,2
+7202018,Poso Pesisir Utara,Poso,Sulawesi Tengah,2
+6409002,Waru,Penajam Paser Utara,Kalimantan Timur,2
+1203032,Angkola Muara Tais,Tapanuli Selatan,Sumatera Utara,2
+3305012,Kebumen,Kebumen,Jawa Tengah,2
+3404006,Mlati,Sleman,DI Yogyakarta,2
+1105009,Meureubo,Aceh Barat,Aceh,2
+1506004,Betara,Tanjung Jabung Barat,Jambi,2
+3313004,Jumantono,Karanganyar,Jawa Tengah,2
+1218009,Dolok Masihul,Serdang Bedagai,Sumatera Utara,2
+1106014,Lembah Seulawah,Aceh Besar,Aceh,2
+1806002,Talang Padang,Tanggamus,Lampung,2
+7201022,Mantoh,Banggai,Sulawesi Tengah,2
+7202004,Pamona Puselemba,Poso,Sulawesi Tengah,2
+6203001,Selat,Kapuas,Kalimantan Tengah,2
+1801017,Candipuro,Lampung Selatan,Lampung,2
+1205012,Padang Tualang,Langkat,Sumatera Utara,2
+1607019,Air Kumbang,Banyuasin,Sumatera Selatan,2
+1213003,Panyabungan Timur,Mandailing Natal,Sumatera Utara,2
+3603001,Balaraja,Tangerang,Banten,1
+1203029,Muara Batang Toru,Tapanuli Selatan,Sumatera Utara,1
+1106019,Darul Kamal,Aceh Besar,Aceh,1
+3203028,Cipanas,Cianjur,Jawa Barat,1
+1106011,Kuta Baro,Aceh Besar,Aceh,1
+5108004,Banjar,Buleleng,Bali,1
+1216006,Dolok Sanggul,Humbang Hasundutan,Sumatera Utara,1
+1703021,Arma Jaya,Bengkulu Utara,Bengkulu,1
+7208006,Sausu,Parigi Moutong,Sulawesi Tengah,1
+7208019,Parigi Utara,Parigi Moutong,Sulawesi Tengah,1
+3376001,Tegal Barat,Kota Tegal,Jawa Tengah,1
+3327011,Ampelgading,Pemalang,Jawa Tengah,1
+1106023,Blang Bintang,Aceh Besar,Aceh,1
+1812001,Tulang Bawang Tengah,Tulang Bawang Barat,Lampung,1
+9404001,Mimika Baru,Mimika,Papua Tengah,1
+1115005,Darul Makmur,Nagan Raya,Aceh,1
+6304010,Bakumpai,Barito Kuala,Kalimantan Selatan,1
+7322006,Sukamaju,Luwu Utara,Sulawesi Selatan,1
+7307007,Sinjai Borong,Sinjai,Sulawesi Selatan,1
+1106003,Indrapuri,Aceh Besar,Aceh,1
+1106002,Lhoknga,Aceh Besar,Aceh,1
+1106004,Seulimeum,Aceh Besar,Aceh,1
+3471004,Danurejan,Kota Yogyakarta,DI Yogyakarta,1
+7202021,Poso Kota Selatan,Poso,Sulawesi Tengah,1
+7324010,Kalaena,Luwu Timur,Sulawesi Selatan,1
+3328009,Pangkah,Tegal,Jawa Tengah,1
+9404009,Kuala Kencana,Mimika,Papua Tengah,1
+1871017,Enggal,Kota Bandar Lampung,Lampung,1
+1208032,Dolog Masagal,Simalungun,Sumatera Utara,1
+3214011,Bojong,Purwakarta,Jawa Barat,1
+1273004,Sibolga Sambas,Kota Sibolga,Sumatera Utara,1
+1277004,Padangsidimpuan Hutaimbaru,Kota Padang Sidempuan,Sumatera Utara,1
+3303006,Kalimanah,Purbalingga,Jawa Tengah,1
+3321005,Karangtengah,Demak,Jawa Tengah,1
+1608003,Belitang,Ogan Komering Ulu Timur,Sumatera Selatan,1
+7202003,Lage,Poso,Sulawesi Tengah,1
+3207019,Pamarican,Ciamis,Jawa Barat,1
+3274005,Kesambi,Kota Cirebon,Jawa Barat,1
+1209025,Sei Kepayang Timur,Asahan,Sumatera Utara,1
+3218005,Langkaplancar,Pangandaran,Jawa Barat,1
+3202012,Nagrak,Sukabumi,Jawa Barat,1
+3216004,Tambelang,Bekasi,Jawa Barat,1
+3205042,Sucinaraja,Garut,Jawa Barat,1
+1221012,Sihapas Barumun,Padang Lawas,Sumatera Utara,1
+1205017,Sei Lepan,Langkat,Sumatera Utara,1
+3471009,Kraton,Kota Yogyakarta,DI Yogyakarta,1
+3215004,Ciampel,Karawang,Jawa Barat,1
+7309010,Cenrana,Maros,Sulawesi Selatan,1
+1871001,Kedaton,Kota Bandar Lampung,Lampung,1
+3578009,Sukolilo,Kota Surabaya,Jawa Timur,1
+3211011,Tanjungsari,Sumedang,Jawa Barat,1
+7326009,Tikala,Toraja Utara,Sulawesi Selatan,1
