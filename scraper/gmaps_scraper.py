@@ -147,13 +147,14 @@ class GoogleMapsScraper:
                 logger.debug(f"No results found for: {search_term}")
                 return []
 
-            # Scrolling to load results - wait for dynamic content to load
+            # Scrolling to load results - keep scrolling while there's potential for more
             previous_count = 0
             scroll_attempts = 0
             max_scrolls = 200
             no_change_count = 0
+            max_no_change = 50  # Keep scrolling for up to 50 attempts with no new results
 
-            while scroll_attempts < max_scrolls:
+            while scroll_attempts < max_scrolls and no_change_count < max_no_change:
                 try:
                     # Scroll to bottom to load more results
                     await self.page.evaluate(
@@ -164,14 +165,12 @@ class GoogleMapsScraper:
                         }
                         """
                     )
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)  # Increased wait for dynamic loading
 
                     # Check if we got new results
                     current_count = len(await self.page.query_selector_all('div.Nv2PK'))
                     if current_count == previous_count:
                         no_change_count += 1
-                        if no_change_count >= 15:
-                            break
                     else:
                         no_change_count = 0
                     previous_count = current_count
