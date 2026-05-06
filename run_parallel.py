@@ -219,8 +219,7 @@ async def main():
     kecamatan_list = df.to_dict("records")
 
     if args.sample > 0:
-        step = max(1, len(kecamatan_list) // args.sample)
-        kecamatan_list = kecamatan_list[::step][:args.sample]
+        kecamatan_list = kecamatan_list[:args.sample]
 
     logger.info("=" * 80)
     logger.info("PARALLEL SCRAPER - 2 BROWSER INSTANCES")
