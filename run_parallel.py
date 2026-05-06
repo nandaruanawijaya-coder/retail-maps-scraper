@@ -68,7 +68,13 @@ async def scrape_kecamatan_parallel(scrapers, parser_obj, storage, kecamatan_dat
 
             async def search_and_parse(scraper, cat, kecamatan_id):
                 try:
-                    raw_results = await scraper.search(cat["gmaps_query"], kecamatan_name)
+                    raw_results = await scraper.search(
+                        query=cat["gmaps_query"],
+                        location=kecamatan_name,
+                        kecamatan=kecamatan_name,
+                        kabupaten=kabupaten_name,
+                        provinsi=provinsi_name
+                    )
                     storage.save_raw(raw_results, kecamatan_id, cat["name"])
 
                     merchants = []
