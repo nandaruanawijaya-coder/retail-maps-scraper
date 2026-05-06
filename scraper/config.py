@@ -8,8 +8,8 @@ BROWSER_TIMEOUT = 30000  # milliseconds
 
 OUTPUT_FIELDS = [
     "google_id", "name", "address", "lat", "lng",
-    "rating", "review_count", "phone", "website", "hours",
-    "google_category", "status", "verified_badge",
+    "rating", "review_count", "phone", "hours",
+    "google_category", "status",
     "our_category", "vertical",
     "kecamatan_name", "kabupaten_name", "provinsi_name",
     "district_id",
