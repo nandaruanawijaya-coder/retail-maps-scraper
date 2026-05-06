@@ -30,21 +30,14 @@ class GoogleMapsParser:
                 "website": raw_data.get("website", ""),
                 "hours": raw_data.get("hours", ""),
                 "google_category": raw_data.get("google_category", ""),
-                "service_options": self._extract_service_options(raw_data),
                 "status": raw_data.get("status", ""),
-                "price_range": raw_data.get("price_range", ""),
                 "verified_badge": raw_data.get("verified_badge", ""),
-                "attributes": json.dumps(
-                    raw_data.get("attributes", {}), ensure_ascii=False
-                ),
                 "our_category": category["name"],
                 "vertical": category["vertical"],
-                "kelurahan_name": district.kelurahan,
                 "kecamatan_name": district.kecamatan,
                 "kabupaten_name": district.kabupaten,
                 "provinsi_name": district.provinsi,
                 "district_id": district.district_id,
-                "district_name": district.district_name,
             }
         except Exception as e:
             logger.error(f"Error parsing merchant: {e}")
@@ -103,10 +96,3 @@ class GoogleMapsParser:
             pass
         return None
 
-    def _extract_service_options(self, data: dict) -> str:
-        """Extract and format service options."""
-        options = data.get("service_options", {})
-        if isinstance(options, dict):
-            enabled = [k for k, v in options.items() if v]
-            return "|".join(enabled) if enabled else ""
-        return str(options) if options else ""
