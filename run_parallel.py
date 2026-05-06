@@ -41,6 +41,9 @@ def setup_logging():
 
 async def scrape_kecamatan_parallel(scrapers, parser_obj, storage, kecamatan_data, num_parallel=2):
     """Scrape all categories for one kecamatan using parallel searches."""
+    import json
+    import os
+
     kecamatan_id = str(kecamatan_data["district_id"])
     kecamatan_name = kecamatan_data["kecamatan_name"]
     kabupaten_name = kecamatan_data["kabupaten_name"]
@@ -48,6 +51,25 @@ async def scrape_kecamatan_parallel(scrapers, parser_obj, storage, kecamatan_dat
 
     logger = logging.getLogger(__name__)
     dedup = Deduplicator()
+
+    # Staging directory for incremental results
+    staging_dir = os.path.join(storage.output_dir, ".staging")
+    os.makedirs(staging_dir, exist_ok=True)
+    staging_prefix = os.path.join(staging_dir, f"{kecamatan_id}_")
+
+    # Load any existing staged results from previous run
+    staged_merchants = []
+    for staged_file in os.listdir(staging_dir):
+        if staged_file.startswith(f"{kecamatan_id}_"):
+            try:
+                with open(os.path.join(staging_dir, staged_file), 'r', encoding='utf-8') as f:
+                    merchants = json.load(f)
+                    staged_merchants.extend(merchants)
+                    for m in merchants:
+                        dedup.add(m)
+                logger.debug(f"Loaded {len(merchants)} from staged {staged_file}")
+            except Exception as e:
+                logger.warning(f"Could not load staged {staged_file}: {e}")
 
     logger.info(f"Scraping {kecamatan_name}, {kabupaten_name} with {num_parallel} parallel searches")
 
@@ -90,6 +112,13 @@ async def scrape_kecamatan_parallel(scrapers, parser_obj, storage, kecamatan_dat
                         if merchant:
                             merchants.append(merchant)
                             dedup.add(merchant)
+
+                    # Save merchants to staged file for this category
+                    if merchants:
+                        staged_file = f"{staging_prefix}{cat['name']}.json"
+                        with open(staged_file, 'w', encoding='utf-8') as f:
+                            json.dump(merchants, f, indent=2, ensure_ascii=False)
+                        logger.debug(f"Staged {len(merchants)} to {os.path.basename(staged_file)}")
 
                     storage.mark_done(kecamatan_id, cat["name"])
                     logger.info(f"  {cat['name']:30s}: {len(raw_results):3d} merchants")
@@ -144,8 +173,21 @@ async def scrape_kecamatan_parallel(scrapers, parser_obj, storage, kecamatan_dat
         upload_success = upload_merchants_to_bigquery(csv_records)
         if upload_success:
             logger.info(f"✓ Saved {len(unique)} unique merchants to {kecamatan_id} (BigQuery + CSV/JSON)")
+            # Clean up staging files after successful upload
+            for staged_file in os.listdir(staging_dir):
+                if staged_file.startswith(f"{kecamatan_id}_"):
+                    try:
+                        os.remove(os.path.join(staging_dir, staged_file))
+                    except Exception as e:
+                        logger.warning(f"Could not remove staged {staged_file}: {e}")
+            # Remove staging dir if empty
+            try:
+                os.rmdir(staging_dir)
+            except:
+                pass
         else:
             logger.warning(f"✓ Saved {len(unique)} unique merchants to {kecamatan_id} (CSV/JSON only, BigQuery failed)")
+            logger.info(f"Keeping staged files in {staging_dir} for retry")
     else:
         logger.info(f"✓ No merchants found for {kecamatan_id}")
 
