@@ -42,8 +42,8 @@ CATEGORIES = [
     {"id": 9, "name": "toko_pakaian", "vertical": "FMCG", "gmaps_query": "toko pakaian"},
     {"id": 10, "name": "toko_hp", "vertical": "FMCG", "gmaps_query": "toko hp"},
     {"id": 22, "name": "apotek", "vertical": "FMCG", "gmaps_query": "apotek"},
-    {"id": 23, "name": "supermarket", "vertical": "FMCG", "gmaps_query": "supermarket"},
-    {"id": 24, "name": "minimarket", "vertical": "FMCG", "gmaps_query": "minimarket"},
+    {"id": 23, "name": "agen_pulsa", "vertical": "FMCG", "gmaps_query": "agen pulsa"},
+    {"id": 24, "name": "toko_oleh_oleh", "vertical": "FMCG", "gmaps_query": "toko oleh oleh"},
     {"id": 25, "name": "toko_optik", "vertical": "FMCG", "gmaps_query": "toko optik"},
     {"id": 26, "name": "barbershop", "vertical": "FMCG", "gmaps_query": "barbershop"},
 
