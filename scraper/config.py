@@ -9,10 +9,11 @@ BROWSER_TIMEOUT = 30000  # milliseconds
 OUTPUT_FIELDS = [
     "google_id", "name", "address", "lat", "lng",
     "rating", "review_count", "phone", "website", "hours",
-    "google_category", "service_options", "status", "price_range", "verified_badge", "attributes",
+    "google_category", "status", "verified_badge",
     "our_category", "vertical",
-    "kelurahan_name", "kecamatan_name", "kabupaten_name", "provinsi_name",
-    "district_id", "district_name",
+    "kecamatan_name", "kabupaten_name", "provinsi_name",
+    "district_id",
+    "scraped_at",
 ]
 
 def get_random_delay():

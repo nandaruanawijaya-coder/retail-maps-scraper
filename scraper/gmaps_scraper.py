@@ -2,49 +2,28 @@ import asyncio
 import logging
 import re
 import time
+from datetime import datetime, timezone
 from typing import Optional, Dict, Any, List
 from playwright.async_api import async_playwright, Page, Browser, TimeoutError as PlaywrightTimeoutError
 
 from .config import get_random_delay, get_random_user_agent, HEADLESS
+from .parsers import (
+    parse_address,
+    parse_hours_status,
+    parse_google_category,
+    parse_review_count,
+    parse_rating,
+    parse_phone,
+    parse_coords_from_href,
+    parse_website,
+    parse_verified_badge,
+)
 
 logger = logging.getLogger(__name__)
 
 
 class GoogleMapsScraperError(Exception):
     pass
-
-
-def parse_reviews_count_robust(text: Optional[str]) -> Optional[int]:
-    """
-    Robust review count extraction for formats not caught by simple regex.
-    Handles: "123 reviews", "1,234", "1.234", "1 234"
-    """
-    if not text:
-        return None
-
-    try:
-        text = str(text).strip().lower()
-
-        # Pattern 1: "N reviews" or "N review"
-        match = re.search(r'(\d+(?:[,.\s]\d+)*)\s*reviews?(?!\w)', text)
-        if match:
-            num_str = re.sub(r'[,.\s]', '', match.group(1))
-            if num_str.isdigit():
-                return int(num_str)
-
-        # Pattern 2: "N K" (e.g., "1.2K", "1,2K") - thousands abbreviation
-        match = re.search(r'(\d+(?:[,.\s]\d+)?)\s*k(?:elauan)?$', text)
-        if match:
-            num_str = match.group(1).replace(',', '.').replace(' ', '')
-            try:
-                return int(float(num_str) * 1000)
-            except:
-                pass
-
-        return None
-    except Exception as e:
-        logger.debug(f"Error in robust parsing: {e}")
-        return None
 
 
 class GoogleMapsScraper:
@@ -226,31 +205,22 @@ class GoogleMapsScraper:
             return []
 
     async def _extract_from_element(self, element, idx: int) -> Optional[Dict[str, Any]]:
-        """Extract data from a single result element, including lat/lng from href."""
+        """Extract data from a single result element using pure parser functions."""
         try:
             merchant_data = {}
 
-            # Try to extract lat/lng from the merchant link href first
             try:
                 link_elem = await element.query_selector("a[href*='/maps/place']")
                 if link_elem:
                     href = await link_elem.get_attribute("href")
                     if href:
-                        # Try pattern 1: !8m2!3d[lat]!4d[lng]
-                        coords_match = re.search(r'!8m2!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)', href)
-                        if coords_match:
-                            merchant_data["lat"] = float(coords_match.group(1))
-                            merchant_data["lng"] = float(coords_match.group(2))
-                        else:
-                            # Try pattern 2: @[lat],[lng]
-                            coords_match = re.search(r'@(-?\d+\.\d+),(-?\d+\.\d+)', href)
-                            if coords_match:
-                                merchant_data["lat"] = float(coords_match.group(1))
-                                merchant_data["lng"] = float(coords_match.group(2))
+                        lat, lng = parse_coords_from_href(href)
+                        if lat is not None:
+                            merchant_data["lat"] = lat
+                            merchant_data["lng"] = lng
             except Exception as e:
                 logger.debug(f"Error extracting coords from href: {e}")
 
-            # Get visible text content
             text_content = await element.text_content()
             if not text_content:
                 return None
@@ -259,74 +229,63 @@ class GoogleMapsScraper:
             if not text:
                 return None
 
-            # Extract name from element (first line usually)
             lines = [l.strip() for l in text.split('\n') if l.strip()]
             if not lines:
                 return None
 
             merchant_data["name"] = lines[0]
 
-            # Get aria-label for clean name
             aria_label = await element.get_attribute("aria-label")
             if aria_label:
                 merchant_data["name"] = aria_label.split("  ")[0].strip()
 
-            # Extract rating (pattern: 4,9 or 4.9)
-            rating_match = re.search(r"([\d],[\d]|[\d]\.[\d])", text)
-            if rating_match:
-                try:
-                    rating_str = rating_match.group(1).replace(",", ".")
-                    merchant_data["rating"] = float(rating_str)
-                except:
-                    pass
+            rating = parse_rating(text)
+            if rating is not None:
+                merchant_data["rating"] = rating
 
-            # Extract review count - first try simple regex, then robust parsing
-            review_count = None
-
-            # Step 1: Try simple regex for (123) format
-            review_match = re.search(r"\((\d+)\)", text)
-            if review_match:
-                try:
-                    review_count = int(review_match.group(1))
-                except:
-                    pass
-
-            # Step 2: If not found, try robust parsing for other formats
-            if review_count is None:
-                review_count = parse_reviews_count_robust(text)
-
+            review_count = parse_review_count(text)
             if review_count is not None:
                 merchant_data["review_count"] = review_count
-            else:
-                # Debug: log when review count is not found
-                if idx < 3:  # Only log first 3
-                    logger.debug(f"No review count found for '{lines[0]}'. Text sample: {text[:200]}")
+            elif idx < 3:
+                logger.debug(f"No review count found for '{lines[0]}'. Text sample: {text[:200]}")
 
-            # Extract phone number (pattern: 0XXXX-XXXX-XXXX or +62 or 0 followed by digits)
-            phone_match = re.search(r"(0\d{7,}|\+62\d{8,}|\d{3,4}-\d{3,4}-\d{3,4})", text)
-            if phone_match:
-                merchant_data["phone"] = phone_match.group(1)
+            phone = parse_phone(text)
+            if phone is not None:
+                merchant_data["phone"] = phone
 
-            # Extract address (between · separators)
+            website = parse_website(text)
+            if website is not None:
+                merchant_data["website"] = website
+
+            verified = parse_verified_badge(text)
+            if verified is not None:
+                merchant_data["verified_badge"] = verified
+
             parts = text.split("·")
             if len(parts) >= 2:
-                addr_part = parts[1].strip()
-                # Clean merged text like "noBuka" -> "Buka"
-                addr_part = re.sub(r'no([A-Z])', r' \1', addr_part)
-                # Remove trailing keywords
-                addr_part = re.sub(r'(Situs Web|Rute|Tel|\.\.\.)', '', addr_part).strip()
-                if addr_part and len(addr_part) > 3:
-                    merchant_data["address"] = addr_part
+                segment_zero = parts[0]
+                addr_segment = parts[1]
 
+                google_category = parse_google_category(segment_zero)
+                if google_category is not None:
+                    merchant_data["google_category"] = google_category
 
-            # Check if we have a valid name
+                hours_status = parse_hours_status(addr_segment)
+                if hours_status["hours"] is not None:
+                    merchant_data["hours"] = hours_status["hours"]
+                    merchant_data["status"] = hours_status["status"]
+
+                address = parse_address(addr_segment)
+                if address is not None:
+                    merchant_data["address"] = address
+
             if not merchant_data.get("name"):
                 return None
 
-            # Generate a unique ID
             name = merchant_data["name"]
             address = merchant_data.get("address", "")
             merchant_data["google_id"] = f"gmaps_{hash((name, address)) % 10**10}"
+            merchant_data["scraped_at"] = datetime.now(timezone.utc).isoformat()
 
             return merchant_data
 
