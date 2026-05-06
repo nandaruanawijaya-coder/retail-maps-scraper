@@ -41,6 +41,11 @@ CATEGORIES = [
     {"id": 8, "name": "toko_sepatu", "vertical": "FMCG", "gmaps_query": "toko sepatu"},
     {"id": 9, "name": "toko_pakaian", "vertical": "FMCG", "gmaps_query": "toko pakaian"},
     {"id": 10, "name": "toko_hp", "vertical": "FMCG", "gmaps_query": "toko hp"},
+    {"id": 22, "name": "apotek", "vertical": "FMCG", "gmaps_query": "apotek"},
+    {"id": 23, "name": "supermarket", "vertical": "FMCG", "gmaps_query": "supermarket"},
+    {"id": 24, "name": "minimarket", "vertical": "FMCG", "gmaps_query": "minimarket"},
+    {"id": 25, "name": "toko_optik", "vertical": "FMCG", "gmaps_query": "toko optik"},
+    {"id": 26, "name": "barbershop", "vertical": "FMCG", "gmaps_query": "barbershop"},
 
     # --- F&B (Field-sales friendly) ---
     {"id": 11, "name": "restaurant", "vertical": "F&B", "gmaps_query": "restaurant"},
@@ -54,6 +59,10 @@ CATEGORIES = [
     {"id": 19, "name": "light_meal", "vertical": "F&B", "gmaps_query": "light meal"},
     {"id": 20, "name": "warung_ayam_goreng", "vertical": "F&B", "gmaps_query": "warung ayam goreng"},
     {"id": 21, "name": "rumah_mie", "vertical": "F&B", "gmaps_query": "rumah mie"},
+    {"id": 27, "name": "warung_boba", "vertical": "F&B", "gmaps_query": "warung boba"},
+    {"id": 28, "name": "juice_bar", "vertical": "F&B", "gmaps_query": "juice bar"},
+    {"id": 29, "name": "nasi_kuning", "vertical": "F&B", "gmaps_query": "nasi kuning"},
+    {"id": 30, "name": "tahu_goreng", "vertical": "F&B", "gmaps_query": "tahu goreng"},
 ]
 
 CATEGORY_MAP = {c["name"]: c for c in CATEGORIES}
