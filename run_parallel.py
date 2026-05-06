@@ -114,6 +114,23 @@ async def scrape_kecamatan_parallel(scrapers, parser_obj, storage, kecamatan_dat
             csv_records.append(record)
 
         storage.save_csv(csv_records, kecamatan_id)
+        
+        # Merge with existing JSON if resuming (deduplication)
+        import json
+        import os
+        json_path = os.path.join(storage.output_dir, f"{kecamatan_id}.json")
+        if os.path.exists(json_path):
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    existing_merchants = json.load(f)
+                existing_ids = {m.get('google_id') for m in existing_merchants}
+                new_merchants = [m for m in csv_records if m.get('google_id') not in existing_ids]
+                merged = existing_merchants + new_merchants
+                logger.info(f"Merged: {len(existing_merchants)} existing + {len(new_merchants)} new = {len(merged)} total")
+                csv_records = merged
+            except Exception as e:
+                logger.warning(f"Could not merge existing JSON: {e}. Overwriting.")
+        
         storage.save_json(csv_records, kecamatan_id)
 
         # Upload to BigQuery
