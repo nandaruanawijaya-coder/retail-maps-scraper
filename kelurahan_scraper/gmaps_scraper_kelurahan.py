@@ -1,4 +1,4 @@
-"""Google Maps scraper for kelurahan-level searches."""
+"""Google Maps scraper for kelurahan-level searches with full extraction."""
 import asyncio
 import logging
 import re
@@ -12,6 +12,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
+from scraper.config import get_random_delay, get_random_user_agent, HEADLESS
 from scraper.parsers import (
     parse_address,
     parse_hours_status,
@@ -20,25 +21,11 @@ from scraper.parsers import (
     parse_rating,
     parse_phone,
     parse_coords_from_href,
+    parse_website,
+    parse_verified_badge,
 )
 
 logger = logging.getLogger(__name__)
-
-
-def get_random_delay():
-    import random
-    return random.uniform(0.5, 3.0)
-
-
-def get_random_user_agent():
-    import random
-    agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
-    ]
-    return random.choice(agents)
 
 
 class GoogleMapsScraperKelurahan:
@@ -203,9 +190,22 @@ class GoogleMapsScraperKelurahan:
             return []
 
     async def _extract_from_element(self, element, idx: int) -> Optional[Dict[str, Any]]:
-        """Extract full merchant data from a single element."""
+        """Extract full merchant data from a single result element using parser functions."""
         try:
             merchant_data = {}
+
+            # Extract coordinates from href
+            try:
+                link_elem = await element.query_selector("a[href*='/maps/place']")
+                if link_elem:
+                    href = await link_elem.get_attribute("href")
+                    if href:
+                        lat, lng = parse_coords_from_href(href)
+                        if lat is not None:
+                            merchant_data["lat"] = lat
+                            merchant_data["lng"] = lng
+            except Exception as e:
+                logger.debug(f"Error extracting coords from href: {e}")
 
             text_content = await element.text_content()
             if not text_content:
@@ -219,48 +219,48 @@ class GoogleMapsScraperKelurahan:
             if not lines:
                 return None
 
-            # Extract name from aria-label or first line
+            merchant_data["name"] = lines[0]
+
             aria_label = await element.get_attribute("aria-label")
             if aria_label:
                 merchant_data["name"] = aria_label.split("  ")[0].strip()
-            else:
-                merchant_data["name"] = lines[0]
 
-            # Try to get href for coordinates
-            href = await element.get_attribute("href")
-            if href:
-                coords = parse_coords_from_href(href)
-                if coords:
-                    merchant_data["lat"] = coords.get("lat")
-                    merchant_data["lng"] = coords.get("lng")
-                merchant_data["google_id"] = href  # Store href as unique ID
-            else:
-                merchant_data["google_id"] = f"kel_{idx}_{hash(merchant_data['name']) % 10**10}"
+            rating = parse_rating(text)
+            if rating is not None:
+                merchant_data["rating"] = rating
 
-            # Parse address (usually line 1 if not name)
-            if len(lines) > 1:
-                merchant_data["address"] = parse_address(lines[1])
+            review_count = parse_review_count(text)
+            if review_count is not None:
+                merchant_data["review_count"] = review_count
 
-            # Parse rating and review count from aria-label or lines
-            if aria_label:
-                rating_match = re.search(r'([0-9]\.[0-9])\s*stars?', aria_label)
-                if rating_match:
-                    merchant_data["rating"] = float(rating_match.group(1))
+            phone = parse_phone(text)
+            if phone is not None:
+                merchant_data["phone"] = phone
 
-                review_match = re.search(r'\(([0-9,]+)\s*(?:review|rating)', aria_label)
-                if review_match:
-                    merchant_data["review_count"] = int(review_match.group(1).replace(',', ''))
+            parts = text.split("·")
+            if len(parts) >= 2:
+                segment_zero = parts[0]
+                addr_segment = parts[1]
 
-            # Parse category from aria-label
-            if aria_label:
-                merchant_data["google_category"] = parse_google_category(aria_label)
+                google_category = parse_google_category(segment_zero)
+                if google_category is not None:
+                    merchant_data["google_category"] = google_category
 
-            # Extract phone if present (usually has phone icon pattern)
-            merchant_data["phone"] = ""
-            merchant_data["hours"] = ""
-            merchant_data["status"] = ""
+                hours_status = parse_hours_status(addr_segment)
+                if hours_status["hours"] is not None:
+                    merchant_data["hours"] = hours_status["hours"]
+                    merchant_data["status"] = hours_status["status"]
 
-            # Add timestamp
+                address = parse_address(addr_segment)
+                if address is not None:
+                    merchant_data["address"] = address
+
+            if not merchant_data.get("name"):
+                return None
+
+            name = merchant_data["name"]
+            address = merchant_data.get("address", "")
+            merchant_data["google_id"] = f"gmaps_{hash((name, address)) % 10**10}"
             merchant_data["scraped_at"] = datetime.now(timezone.utc).isoformat()
 
             return merchant_data

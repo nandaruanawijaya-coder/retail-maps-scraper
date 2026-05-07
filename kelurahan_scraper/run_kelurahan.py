@@ -106,11 +106,12 @@ async def scrape_kelurahan_batch(kelurahan_list, num_scrapers=2):
         await scraper.init()
         scrapers.append(scraper)
 
-    all_merchants = []
+    total_merchants = 0
 
     try:
         for kel_idx, kelurahan_data in enumerate(kelurahan_list, 1):
             kel_id = kelurahan_data['kelurahan_id']
+            kelurahan_merchants = []
             logger.info(f"\n[{kel_idx}/{len(kelurahan_list)}] {kelurahan_data['kelurahan_name']}, {kelurahan_data['kecamatan_name']}")
 
             # Process categories in parallel batches
@@ -167,20 +168,28 @@ async def scrape_kelurahan_batch(kelurahan_list, num_scrapers=2):
                 if tasks:
                     batch_results = await asyncio.gather(*tasks)
                     for merchants in batch_results:
-                        all_merchants.extend(merchants)
+                        kelurahan_merchants.extend(merchants)
 
                     # Brief pause between batches
                     if batch_idx + num_scrapers < len(CATEGORIES):
                         await asyncio.sleep(1)
 
-        # Upload all merchants to BigQuery
-        logger.info(f"\nUploading {len(all_merchants)} total merchants to BigQuery...")
-        upload_success = upload_merchants_to_bigquery(all_merchants)
+            # Upload merchants for this kelurahan immediately
+            if kelurahan_merchants:
+                logger.info(f"\n  Uploading {len(kelurahan_merchants)} merchants from {kelurahan_data['kelurahan_name']}...")
+                upload_success = upload_merchants_to_bigquery(kelurahan_merchants)
+                if upload_success:
+                    total_merchants += len(kelurahan_merchants)
+                    logger.info(f"  ✓ Uploaded {len(kelurahan_merchants)} merchants")
+                else:
+                    logger.warning(f"  ✗ Upload failed for {len(kelurahan_merchants)} merchants")
 
-        if upload_success:
-            logger.info(f"✓ Batch complete: {len(all_merchants)} merchants uploaded to merchants_gmaps_kelurahan")
-        else:
-            logger.warning(f"✓ Scraped {len(all_merchants)} merchants but BigQuery upload failed")
+        # Summary
+        logger.info("=" * 80)
+        logger.info(f"✓ BATCH COMPLETE")
+        logger.info(f"✓ Total merchants uploaded: {total_merchants:,}")
+        logger.info(f"✓ End time: {datetime.now().isoformat()}")
+        logger.info("=" * 80)
 
     finally:
         # Close all scrapers
