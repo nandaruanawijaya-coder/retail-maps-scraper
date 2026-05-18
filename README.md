@@ -1,51 +1,60 @@
 # Google Maps Merchant Scraper — Indonesia Retail TAM
 
-A high-performance web scraper for extracting merchant data (name, address, ratings, reviews, coordinates) from Google Maps across Indonesia's 7,268 kecamatan (sub-districts) and 21 retail product categories. Built for market analysis and regional TAM (Total Addressable Market) estimation.
+A high-performance web scraper for extracting merchant data (name, address, ratings, reviews, coordinates) from Google Maps across Indonesia at **kelurahan level** (sub-sub-district granularity). Supports 30 FMCG and F&B retail product categories. Built for hyperlocal market analysis and regional TAM (Total Addressable Market) estimation.
 
 ## 🎯 Objectives
 
-- **Comprehensive Coverage**: Capture 2,000–3,000 merchants per kecamatan across 21 FMCG and F&B categories
-- **High Data Quality**: Extract 99%+ lat/lng accuracy, 83%+ review count coverage using search results without clicking
-- **Regional Prioritization**: Focus on high-activity districts based on historical visit data (1,009 priority districts identified)
-- **Automated Pipeline**: Scrape → deduplicate → CSV/JSON → BigQuery (real-time streaming)
-- **Production Scale**: 2-worker parallel architecture targeting 12–15 days for 1,009 top districts
+- **Hyperlocal Coverage**: Capture 100–500+ merchants per kelurahan (sub-sub-district) across 30 FMCG and F&B categories
+- **High Data Quality**: Extract 99.1%+ lat/lng accuracy, 83%+ review count coverage using search results without clicking
+- **Regional Prioritization**: Focus on high-activity areas based on historical visit data (Bandung region: 505 kelurahan identified)
+- **Automated Pipeline**: Scrape → deduplicate → BigQuery (incremental uploads per kelurahan)
+- **Production Scale**: 2-worker parallel architecture targeting 2–4 hours per 40 kelurahan with caffeinate (prevents sleep)
 
 ## 📊 Project Scope
 
 ### Geography
-- **Total Kecamatan**: 7,268 across all Indonesian provinces
-- **Priority Districts**: 1,009 with historical visit data, ranked by activity
-  - Top 10: 35,509 visits (16.1% of total activity)
-  - Top 50: 110,436 visits (50% of total activity)
-  - Top 100: 155,656 visits (70.9% of total activity)
-  - All 1,010: 220,038 visits (100% captured activity)
+- **Total Kelurahan**: 4,348+ across all Indonesian provinces
+- **Current Focus**: Bandung Region (Kota Bandung, Bandung, Bandung Barat)
+  - Total kelurahan in region: 505
+  - Prioritized by visit history
+  - Completed: Top 60 kelurahan (1,800 searches)
+  - In progress: 61-100 (1,200 searches)
 
-### Product Categories (21 Total)
+### Product Categories (30 Total)
 
-**FMCG (10 categories)**
-1. Supermarket
-2. Convenience Store
-3. Drugstore / Pharmacy
-4. Hardware Store
-5. Beauty Supply
-6. Pet Store
-7. Liquor Store
-8. Toko Kelontong (traditional convenience)
-9. Minimarket
-10. Toko Sembako (dry goods shop)
+**FMCG (15 categories)**
+1. Toko Kelontong (traditional convenience)
+2. Laundry
+3. Pasar (market)
+4. Toko Bahan Makanan (food supplies)
+5. Stationery
+6. Home Goods
+7. Vape Store
+8. Toko Sepatu (shoe store)
+9. Toko Pakaian (clothing store)
+10. Toko HP (phone store)
+11. Apotek (pharmacy)
+12. Agen Pulsa (phone credit)
+13. Toko Oleh-Oleh (souvenir shop)
+14. Toko Optik (optical store)
+15. Barbershop
 
-**F&B (11 categories)**
-11. Restaurant
-12. Cafe
-13. Bakery
-14. Fast Food Restaurant
-15. Meal Takeaway
-16. Bar / Pub
-17. Ice Cream Shop
-18. Warung Makan (casual eatery)
-19. Kedai Kopi (coffee shop)
-20. Food Court
-21. (Reserved for expansion)
+**F&B (15 categories)**
+16. Restaurant
+17. Cafe
+18. Bakery
+19. Warung Makan (casual eatery)
+20. Warteg (traditional canteen)
+21. Warung Padang (Padang cuisine)
+22. Makanan Ringan (snack shop)
+23. Cake Shop
+24. Light Meal
+25. Warung Ayam Goreng (fried chicken)
+26. Rumah Mie (noodle shop)
+27. Warung Boba (bubble tea)
+28. Juice Bar
+29. Nasi Kuning (yellow rice)
+30. Tahu Goreng (fried tofu)
 
 ## 🛠️ Technical Architecture
 
@@ -117,33 +126,31 @@ Hybrid approach using search results only:
 
 ```
 /Users/nanda.ruanawijaya/Documents/Buku/5. Retail/Scraper/
-├── README.md                           # This file
-├── run_parallel.py                     # Production CLI entry point
-├── scraper/
-│   ├── __init__.py
-│   ├── boundary.py                     # District dataclass
+├── README.md                           # This file (main documentation)
+├── IMPLEMENTATION_COMPLETE.md          # TDD parser implementation status
+├── scraper/                            # Core scraper modules (kecamatan-level)
 │   ├── config.py                       # Categories, output schema, constants
 │   ├── gmaps_scraper.py               # Playwright + DOM extraction
 │   ├── gmaps_parser.py                # Raw data → standardized merchant dict
-│   ├── deduplicator.py                # Merge by google_id, category union
-│   ├── storage.py                      # CSV/JSON/progress checkpointing
-│   ├── bigquery_uploader.py           # Streaming to BigQuery
+│   ├── parsers.py                      # Pure parsing functions (99 tests)
+│   ├── bigquery_uploader.py           # BigQuery uploader for merchants_gmaps
 │   └── requirements.txt                # Dependencies
+├── kelurahan_scraper/                  # Kelurahan-level scraper (sub-sub-district)
+│   ├── README.md                       # Kelurahan-specific documentation
+│   ├── gmaps_scraper_kelurahan.py     # Kelurahan search format + full extraction
+│   ├── bigquery_uploader_kelurahan.py # BigQuery uploader for merchants_gmaps_kelurahan
+│   ├── run_kelurahan.py               # Main execution script with progress tracking
+│   ├── logs/                           # Kelurahan scraper logs
+│   └── progress_kelurahan.json        # Resumable progress state (in .gitignore)
 ├── data/
 │   ├── input/
-│   │   ├── districts.csv               # All 7,268 kecamatan (ID, name, hierarchy)
-│   │   ├── districts_prioritized.csv   # 1,009 top districts (ranked by visits)
-│   │   └── district_priority.sql       # SQL to fetch visit counts from source DB
-│   ├── output/                         # Final CSV/JSON per kecamatan
-│   │   └── {kecamatan_id}.csv
-│   └── raw/                            # Raw Overpass/Google results (audit trail)
-│       └── {kecamatan_id}_{category}.json
-├── logs/
-│   ├── scraper_parallel.log            # Main log file
-│   └── run_sample_50.log               # Latest run
-├── progress_parallel.json              # Resumable checkpoint: {kecamatan_id: [categories]}
-└── export_data/
-    └── district_priority.sql           # Query for BigQuery visit aggregation
+│   │   ├── kelurahan_prioritized.csv   # All 4,348+ kelurahan (ID, name, hierarchy)
+│   │   ├── bandung_kelurahan.csv       # 505 kelurahan filtered for Bandung region
+│   │   └── districts_prioritized.csv   # Legacy: 1,009 priority kecamatan
+│   └── output/                         # Final outputs
+├── filter_bandung_kelurahan.py         # Script to filter Bandung region CSV
+├── run_bandung_61_100.py               # Script to run kelurahan 61-100 from Bandung
+└── logs/                               # Main logs directory
 ```
 
 ## 🚀 Quick Start
@@ -153,36 +160,52 @@ Hybrid approach using search results only:
 python3 --version  # 3.9+
 pip3 install -r scraper/requirements.txt
 # Requires: Google Cloud SDK authenticated (gcloud auth application-default login)
+gcloud auth application-default login
 ```
 
-### Run Scraper
+### Kelurahan-Level Scraper (Current Focus)
 
-**Test (5 districts):**
+**Run Bandung region (top 100 kelurahan with caffeinate):**
 ```bash
-python3 run_parallel.py --sample 5
+caffeinate -i python3 run_bandung_61_100.py
+# Prevents Mac from sleeping during multi-hour run
 ```
 
-**Small Scale (50 priority districts, ~25 hours):**
+**Run any 50 kelurahan:**
 ```bash
-python3 run_parallel.py --sample 50
+python3 -c "
+import asyncio, os, sys, pandas as pd
+sys.path.insert(0, 'kelurahan_scraper')
+from run_kelurahan import scrape_kelurahan_batch
+
+async def main():
+    df = pd.read_csv('data/input/kelurahan_prioritized.csv')
+    await scrape_kelurahan_batch(df.head(50).to_dict('records'), num_scrapers=2)
+
+asyncio.run(main())
+"
 ```
 
-**Large Scale (100 priority districts, ~35 hours):**
+**Or use custom run scripts:**
 ```bash
-python3 run_parallel.py --sample 100
+python3 run_bandung_61_100.py          # Bandung 61-100 (40 kelurahan)
+# Automatically resumes from saved progress if interrupted
 ```
 
-**Full Production (1,009 priority districts, ~200 hours / 8–9 days):**
+### Monitor Progress
+
+**Check running process:**
 ```bash
-python3 run_parallel.py --all
+tail -f /tmp/bandung_61_100.log
 ```
 
-**Resume from Checkpoint:**
+**Check BigQuery:**
 ```bash
-python3 run_parallel.py --resume
+bq query --use_legacy_sql=false \
+  'SELECT COUNT(*) merchants, COUNT(DISTINCT kelurahan_name) kelurahan 
+   FROM ledger-fcc1e.retail_payment_base.merchants_gmaps_kelurahan 
+   WHERE DATE(scraped_at) = CURRENT_DATE()'
 ```
-
-The scraper automatically detects and uses `districts_prioritized.csv` if present. To scrape all districts regardless of visit volume, rename/remove the prioritized file.
 
 ### Monitor Progress
 ```bash
@@ -219,9 +242,14 @@ Each merchant record contains:
 | district_id | integer | 100% | Unique kecamatan ID |
 | scraped_at | timestamp | 100% | Query timestamp |
 
-**BigQuery Table**: `ledger-fcc1e.retail_payment_base.merchants_gmaps`
-- **Partitioning**: By `scraped_at` (date)
-- **Clustering**: `kecamatan_name`, `our_category`
+**BigQuery Tables**:
+- **Kecamatan-level**: `ledger-fcc1e.retail_payment_base.merchants_gmaps` (original)
+  - Partitioned by `scraped_at` (date)
+  - Clustered by `kecamatan_name`, `our_category`
+- **Kelurahan-level**: `ledger-fcc1e.retail_payment_base.merchants_gmaps_kelurahan` (NEW)
+  - Partitioned by `scraped_at` (date)
+  - Clustered by `kelurahan_name`, `our_category`
+  - Includes additional fields: `kelurahan_id`, `kelurahan_name`
 
 ## 📊 Prioritization Rationale
 
@@ -311,16 +339,28 @@ top -o %MEM
 - [Google BigQuery Python Client](https://cloud.google.com/python/docs/reference/bigquery/latest)
 - [Google Maps Search URL Structure](https://developers.google.com/maps)
 
-## 📅 Current Status (2026-05-05)
+## 📅 Current Status (2026-05-18)
 
-- ✅ **Scraper Engine**: Production-ready, tested on Wagir (1,995 merchants)
-- ✅ **Prioritization**: 1,009 districts ranked, top 50 (~110K visits) queued
-- ✅ **BigQuery Pipeline**: Live streaming enabled
-- 🔄 **Current Run**: `python3 run_parallel.py --sample 50` (started 12:45:30 UTC)
-- 📈 **Expected ETA**: ~25 hours (all 50 districts + 21 categories)
+### Kecamatan-Level (Original Scope)
+- ✅ **Engine**: Production-ready with 99-test parser TDD implementation
+- ✅ **BigQuery**: Table `merchants_gmaps` with full data pipeline
+
+### Kelurahan-Level (New/Current)
+- ✅ **Scraper**: Full implementation with 30 categories
+- ✅ **Bandung Region**: 505 kelurahan filtered and prioritized
+- ✅ **Top 60 Kelurahan**: Completed (1,800 searches)
+- 🔄 **Top 61-100**: In progress with caffeinate
+- ✅ **BigQuery**: New table `merchants_gmaps_kelurahan` with kelurahan-level granularity
+- ✅ **Resume Capability**: Progress tracking with automatic resumable checkpoints
+
+### Data Quality
+- **Lat/Lng Accuracy**: 99.1% coverage (extracted from href, no clicking)
+- **Review Count**: 83%+ coverage (search results only)
+- **Address Quality**: 98%+ after contamination removal
+- **Merchant Count**: 100-500+ per kelurahan depending on category
 
 ---
 
 **Built by**: Nanda Ruanawijaya  
-**Last Updated**: 2026-05-05  
+**Last Updated**: 2026-05-18  
 **License**: Internal Use Only
