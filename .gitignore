@@ -67,3 +67,4 @@ Thumbs.db
 
 # Large files (can be regenerated)
 *.csv~
+kelurahan_scraper/progress_kelurahan.json
